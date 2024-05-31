@@ -15,7 +15,7 @@ public class AgendaService : IAgendaService
         {
             string dbPath = Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                "Agenda.db3"
+                    "Agenda.db3"
             );
 
             _dbConnection = new SQLiteAsyncConnection(dbPath);
@@ -23,7 +23,6 @@ public class AgendaService : IAgendaService
             await _dbConnection.CreateTableAsync<Contato>();
         }
     }
-
 
     public async Task<int> AddContato(Contato contato)
     {
