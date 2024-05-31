@@ -63,7 +63,7 @@ public interface IAgendaService
 }
 ```
 
-3. AgendaService
+3. Services/AgendaService
 
 ```
 public class AgendaService : IAgendaService
@@ -83,7 +83,7 @@ public class AgendaService : IAgendaService
 				"Agenda.db3"
 			);
 
-			_dbConnection = new SQliteAsyncConnection(dbPath);
+			_dbConnection = new SQLiteAsyncConnection(dbPath);
 
 			await _dbConnection.CreateTableAsync<Contato>();
 		}
