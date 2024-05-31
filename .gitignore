@@ -1,0 +1,166 @@
+# Ignore Visual Studio temporary files, build results e arquivos gerados por extensões populares do Visual Studio
+.nuspec/
+.buildtasks/
+templatesTest/
+
+# Arquivos específicos do usuário
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Arquivos específicos do MonoDevelop/Xamarin Studio
+*.userprefs
+
+# Arquivos gerados automaticamente pelo Mono
+mono_crash.*
+
+# Resultados de build
+[DRdr]ebug/
+[DRdr]ebugPublic/
+[RRrr]elease/
+[RRrr]eleases/
+x64/
+x86/
+[WWww] [IIii] [NNnn]32/
+[AAaa] [RRrr] [MMmm]/
+[AAaa] [RRrr] [MMmm]64/
+bld/
+[BBbb]in/
+[OOoo]bj/
+[LLll]og/
+[LLll]ogs/
+
+# Cache/opções do Visual Studio 2015/2017
+.vs/
+
+# Arquivos gerados automaticamente pelo Visual Studio 2017
+Generated\\ Files/
+
+# Resultados de testes MSTest
+[TestRr]esult*/
+
+# Resultados de build de projetos ATL
+[DRdr]ebugPS/
+[RRrr]eleasePS/
+dlldata.c
+
+# Resultados de benchmark do BenchmarkDotNet
+BenchmarkDotNet.Artifacts/
+
+# Arquivos de scaffolding do ASP.NET
+ScaffoldingReadMe.txt
+
+# Relatórios do StyleCop
+StyleCopReport.xml
+
+# Arquivos gerados pelo Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+.scc
+
+# Arquivos de teste Chutzpah
+_Chutzpah*
+
+# Arquivos de cache do Visual C++
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+# Perfis do Visual Studio
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Arquivos de rastreamento do Visual Studio
+*.e2e
+
+# Workspace local do TFS 2012
+$tf/
+
+# Arquivos do Guidance Automation Toolkit
+*.gpState
+
+# Arquivos do ReSharper
+_ReSharper*/
+*.ReSharper
+*.DotSettings.user
+
+# Arquivos do TeamCity
+_TeamCity*
+
+# Arquivos do DotCover (ferramenta de cobertura de código)
+*.dotCover
+
+# Arquivos do AxoCover (outra ferramenta de cobertura de código)
+.axoCover/*
+!.axoCover/settings.json
+
+# Resultados de cobertura de código do Coverlet
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# Resultados de cobertura de código do Visual Studio
+*.coverage
+*.coveragexml
+
+# Arquivos do NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# Arquivos do MightyMoose
+*.mm.*
+AutoTest.Net/
+
+# Cache do Web workbench (Sass)
+.sass-cache/
+
+# Pasta de saída do Installshield
+[EEee]xpress/
+
+# Arquivos do DocProject (gerador de documentação)
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+
+# Diretório de publicação do Click-Once
+publish/
