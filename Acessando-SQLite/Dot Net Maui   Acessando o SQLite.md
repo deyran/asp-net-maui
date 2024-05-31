@@ -34,7 +34,7 @@ Permite criar, pesquisar e editar banco de dados SQLite
 1. No diretório MVVM/Models
 
 ```
-using SQLite
+using SQLite;
 
 [Table("Contato")]
 public class Contato
@@ -50,7 +50,7 @@ public class Contato
 }
 ```
 
-2. IAgendaService
+2. No diretório Services -> IAgendaService
 
 ```
 public interface IAgendaService
