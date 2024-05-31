@@ -67,53 +67,56 @@ public interface IAgendaService
 3. Services/AgendaService
 
 ```
+using SQLite;
+
 public class AgendaService : IAgendaService
 {
-	private SQLiteAsyncConnection _dbConnection;
-	public async Task InitializeAsync()
-	{
-		await SetUpDb();
-	}
+    private SQLiteAsyncConnection _dbConnection;
 
-	private async Task SetUpDb()
-	{
-		if(_dbConnection == null)
-		{
-			string dbPath = Path.Combine(
-				Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-				"Agenda.db3"
-			);
+    public async Task InitializeAsync()
+    {
+        await SetUpDb();
+    }
 
-			_dbConnection = new SQLiteAsyncConnection(dbPath);
+    private async Task SetUpDb()
+    {
+        if (_dbConnection == null)
+        {
+            string dbPath = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                "Agenda.db3"
+            );
 
-			await _dbConnection.CreateTableAsync<Contato>();
-		}
-	}
+            _dbConnection = new SQLiteAsyncConnection(dbPath);
+            
+            await _dbConnection.CreateTableAsync<Contato>();
+        }
+    }
 
-	public async Task<int> AddContato(Contato contato)
-	{
-		return await _dbConnection.InsertAsync(contato);
-	}	
+    public async Task<int> AddContato(Contato contato)
+    {
+        return await _dbConnection.InsertAsync(contato);
+    }
 
-	public async Task<int> DeleteContato(Contato contato)
-	{
-		return await _dbConnection.DeleteAsync(contato);
-	}
+    public async Task<int> DeleteContato(Contato contato)
+    {
+        return await _dbConnection.DeleteAsync(contato);
+    }
 
-	public async Task<int> UpdateContato(Contato contato)
-	{
-		return await _dbConnection.UpdateAsync(contato);
-	}
+    public async Task<int> UpdateContato(Contato contato)
+    {
+        return await _dbConnection.UpdateAsync(contato);
+    }
 
-	public async Task<Contato> GetContato()
-	{
-		return await _dbConnection.Table<Contato>().ToListAsync();
-	}
+    public async Task<List<Contato>> GetContatos()
+    {
+        return await _dbConnection.Table<Contato>().ToListAsync();
+    }
 
-	public async Task<Contato> GetContato(int id)
-	{
-		return await _dbConnection.Table<Contato>().FirstOrDefaultAsync(x => x.Id == id);
-	}
+    public async Task<Contato> GetContato(int contatoId)
+    {
+        return await _dbConnection.Table<Contato>().FirstOrDefaultAsync(x => x.Id == contatoId);
+    }
 }
 ```
 

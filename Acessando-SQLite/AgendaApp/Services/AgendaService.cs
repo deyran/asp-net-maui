@@ -1,6 +1,5 @@
 ﻿using SQLite;
 
-
 public class AgendaService : IAgendaService
 {
     private SQLiteAsyncConnection _dbConnection;
@@ -41,4 +40,13 @@ public class AgendaService : IAgendaService
         return await _dbConnection.UpdateAsync(contato);
     }
 
+    public async Task<List<Contato>> GetContatos()
+    {
+        return await _dbConnection.Table<Contato>().ToListAsync();
+    }
+
+    public async Task<Contato> GetContato(int contatoId)
+    {
+        return await _dbConnection.Table<Contato>().FirstOrDefaultAsync(x => x.Id == contatoId);
+    }
 }

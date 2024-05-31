@@ -1,7 +1,7 @@
 ﻿public interface IAgendaService
 {
     Task InitializeAsync();
-    Task<List<Contato>> GetContato();
+    Task<List<Contato>> GetContatos();
     Task<Contato> GetContato(int contatoId);
     Task<int> AddContato(Contato contato);
     Task<int> UpdateContato(Contato contato);
