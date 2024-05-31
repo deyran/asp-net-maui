@@ -55,11 +55,12 @@ public class Contato
 ```
 public interface IAgendaService
 {
-	Task InitializeAsync();
-	Task<List<Contato>> GetContato();
-	Task<int> AddContato(Contato contato);
-	Task<int> UpdateContato(Contato contato);
-	Task<int> DeleteContato(Contato contato);
+    Task InitializeAsync();
+    Task<List<Contato>> GetContato();
+    Task<Contato> GetContato(int contatoId);
+    Task<int> AddContato(Contato contato);
+    Task<int> UpdateContato(Contato contato);
+    Task<int> DeleteContato(Contato contato);
 }
 ```
 
@@ -91,7 +92,7 @@ public class AgendaService : IAgendaService
 
 	public async Task<int> AddContato(Contato contato)
 	{
-		return await _dbConnection.InsertAsync(Contato);
+		return await _dbConnection.InsertAsync(contato);
 	}	
 
 	public async Task<int> DeleteContato(Contato contato)

@@ -1,12 +1,13 @@
 ﻿using SQLite;
 
+
 public class AgendaService : IAgendaService
 {
     private SQLiteAsyncConnection _dbConnection;
 
-    public Task InitializeAsync()
+    public async Task InitializeAsync()
     {
-        throw new NotImplementedException();
+        await SetUpDb();
     }
 
     private async Task SetUpDb()
@@ -25,24 +26,19 @@ public class AgendaService : IAgendaService
     }
 
 
-    public Task<int> AddContato(Contato contato)
+    public async Task<int> AddContato(Contato contato)
     {
-        throw new NotImplementedException();
+        return await _dbConnection.InsertAsync(contato);
     }
 
-    public Task<int> DeleteContato(Contato contato)
+    public async Task<int> DeleteContato(Contato contato)
     {
-        throw new NotImplementedException();
+        return await _dbConnection.DeleteAsync(contato);
     }
 
-    public Task<List<Contato>> GetContato()
+    public async Task<int> UpdateContato(Contato contato)
     {
-        throw new NotImplementedException();
+        return await _dbConnection.UpdateAsync(contato);
     }
-    
 
-    public Task<int> UpdateContato(Contato contato)
-    {
-        throw new NotImplementedException();
-    }
 }

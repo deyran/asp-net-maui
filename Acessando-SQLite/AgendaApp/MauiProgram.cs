@@ -19,6 +19,8 @@ namespace AgendaApp
     		builder.Logging.AddDebug();
 #endif
 
+            builder.Services.AddSingleton<IAgendaService, AgendaService>();
+
             return builder.Build();
         }
     }
