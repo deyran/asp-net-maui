@@ -29,7 +29,7 @@
 
 Permite criar, pesquisar e editar banco de dados SQLite
 
-## Criar classes modelo de domínio e mapeamento
+## Criar classes modelo de domínio e Serviço
 
 1. No diretório MVVM/Models
 
@@ -116,4 +116,4 @@ public class AgendaService : IAgendaService
 }
 ```
 
-## Implementar Serviços
+## Registrar o serviço no container DI
