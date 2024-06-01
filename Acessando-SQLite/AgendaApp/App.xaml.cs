@@ -1,12 +1,14 @@
-﻿namespace AgendaApp
+﻿using AgendaApp.MVVM.Views;
+
+namespace AgendaApp
 {
     public partial class App : Application
     {
-        public App()
+        public App(IAgendaService agendaService)
         {
-            InitializeComponent();
-
-            MainPage = new AppShell();
+            InitializeComponent();           
+                        
+            MainPage = new NavigationPage(new AgendaView(agendaService));
         }
     }
 }

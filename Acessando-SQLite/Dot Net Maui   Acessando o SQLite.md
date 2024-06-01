@@ -151,3 +151,10 @@ namespace AgendaApp
     }
 }
 ```
+
+## Injetar o serviço na aplicação
+
+1. No diretório MVVM/Views criar a página AgendaView
+2. No diretório MVVM/ViewModels criar a página AgendaViewModel
+
+https://www.youtube.com/watch?v=F5kDagLBlPw&t=658s
