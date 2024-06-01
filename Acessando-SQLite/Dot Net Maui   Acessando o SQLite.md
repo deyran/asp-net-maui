@@ -120,7 +120,9 @@ public class AgendaService : IAgendaService
 }
 ```
 
-## Registrar o serviço no container DI
+## Injetar o serviço na aplicação
+
+1. Editar o arquivo MauiProgam.cs, como mostrado abaixo
 
 ```
 using Microsoft.Extensions.Logging;
@@ -143,7 +145,7 @@ namespace AgendaApp
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
+            // AQUI
             builder.Services.AddSingleton<IAgendaService, AgendaService>();
 
             return builder.Build();
@@ -152,9 +154,7 @@ namespace AgendaApp
 }
 ```
 
-## Injetar o serviço na aplicação
-
-1. No diretório MVVM/Views criar a página AgendaView
-2. No diretório MVVM/ViewModels criar a página AgendaViewModel
+2. No diretório MVVM/Views criar a página AgendaView
+3. No diretório MVVM/ViewModels criar a página AgendaViewModel
 
 https://www.youtube.com/watch?v=F5kDagLBlPw&t=658s
