@@ -122,11 +122,8 @@ public class AgendaService : IAgendaService
 }
 ```
 
-## Injetar o serviço na aplicação
-
-
-2. Editar o arquivo MauiProgam.cs, como mostrado abaixo
-
+3. Editar o arquivo **MauiProgam.cs** para injetar o serviço na aplicação
+   
 ```
 using Microsoft.Extensions.Logging;
 
@@ -155,35 +152,11 @@ namespace AgendaApp
         }
     }
 }
-```
+```   
 
-2. No diretório **MVVM/Views** criar a página AgendaView e no diretório **MVVM/ViewModels** criar a classe AgendaViewModel.cs
+## Implementar a arquitetura MVVM
+  
+1. No diretório **MVVM/ViewModels** criar e implementar a classe **AgendaViewModel.cs**
    
-3. Implementar a classe AgendaViewModel.cs
-   
 ```
 ```
-
-4. 
-5. Editar o arquivo App.xaml.cs para injetar IAgendaService
-
-```
-using AgendaApp.MVVM.Views;
-
-namespace AgendaApp
-{
-    public partial class App : Application
-    {
-        public App(IAgendaService agendaService)
-        {
-            InitializeComponent();           
-                        
-            MainPage = new NavigationPage(new AgendaView(agendaService));
-        }
-    }
-}
-```
-
-4. AAA
-5. AAA
-6. AAA
