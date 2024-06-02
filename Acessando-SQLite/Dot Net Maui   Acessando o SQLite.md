@@ -31,7 +31,9 @@ Permite criar, pesquisar e editar banco de dados SQLite
 
 ## Implementar a arquitetura MVVM
   
-1. No diretório **MVVM/Models** implementar a classe modelo Contato 
+1. No diretório **MVVM/Views** criar a página **AgendaView.xaml**
+   
+2. No diretório **MVVM/Models** implementar a classe modelo Contato 
    
 ```
 using SQLite;
@@ -195,7 +197,7 @@ public class AgendaService : IAgendaService
 }
 ```
 
-3. Editar o arquivo **MauiProgam.cs** para injetar o serviço na aplicação
+3. Editar o arquivo **MauiProgam.cs** para registrar o serviço na container DI
    
 ```
 using Microsoft.Extensions.Logging;
@@ -225,4 +227,7 @@ namespace AgendaApp
         }
     }
 }
-```   
+```
+
+## Injetar o serviço na aplicação
+
