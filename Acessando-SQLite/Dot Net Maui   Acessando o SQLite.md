@@ -52,78 +52,8 @@ public class Contato
 }
 ```
 
-2. No diretório **MVVM/ViewModels** implementar e classe **AgendaViewModel.cs**
+2. No diretório **MVVM/ViewModels** criar e classe **AgendaViewModel.cs**
    
-```
-using CommunityToolkit.Mvvm.ComponentModel;
-using System.Windows.Input;
-
-namespace AgendaApp.MVVM.ViewModels
-{
-    public partial class AgendaViewModel : ObservableObject
-    {
-        [ObservableProperty]
-        private List<Contato> _contatos;
-
-        [ObservableProperty]
-        private Contato _contatoAtual;
-
-        public ICommand AddCommand { get; set; }
-        public ICommand UpdateCommand { get; set; }
-        public ICommand DeleteCommand { get; set; }
-        public ICommand DisplayCommand { get; set; }
-
-        public AgendaViewModel(IAgendaService contatoRepository)
-        {
-            ContatoAtual = new Contato();
-
-            AddCommand = new Command(
-                async () =>
-                {
-                    await contatoRepository.InitializeAsync();
-                    await contatoRepository.AddContato(ContatoAtual);
-                    await Refresh(contatoRepository);
-                }
-            );
-
-            UpdateCommand = new Command(
-                async () =>
-                {
-                    await contatoRepository.InitializeAsync();
-                    await contatoRepository.UpdateContato(ContatoAtual);
-                    await Refresh(contatoRepository);
-                }
-            );
-
-            DeleteCommand = new Command(
-                async () =>
-                {
-                    await contatoRepository.InitializeAsync();
-
-                    var resposta = await App.Current.MainPage.DisplayAlert("Alerta", "Confirma exclusão ?", "Sim", "Não");
-                    if (resposta)
-                        await contatoRepository.DeleteContato(ContatoAtual);
-
-                    await Refresh(contatoRepository);
-                }
-            );
-
-            DisplayCommand = new Command(
-                async() =>
-                {
-                    await contatoRepository.InitializeAsync();
-                    await Refresh(contatoRepository);
-                }
-            );
-        }
-
-        private async Task Refresh(IAgendaService contato)
-        {
-            Contatos = await contato.GetContatos();
-        }
-    }
-}
-```
 
 ## Criar classe de serviço
 
@@ -197,7 +127,82 @@ public class AgendaService : IAgendaService
 }
 ```
 
-3. Editar o arquivo **MauiProgam.cs** para registrar o serviço na container DI
+## Injetar o serviço na aplicação
+
+1. No diretório **MVVM/ViewModels** implementar e classe **AgendaViewModel.cs** e injetar a classe serviço
+   
+```
+using CommunityToolkit.Mvvm.ComponentModel;
+using System.Windows.Input;
+
+namespace AgendaApp.MVVM.ViewModels
+{
+    public partial class AgendaViewModel : ObservableObject
+    {
+        [ObservableProperty]
+        private List<Contato> _contatos;
+
+        [ObservableProperty]
+        private Contato _contatoAtual;
+
+        public ICommand AddCommand { get; set; }
+        public ICommand UpdateCommand { get; set; }
+        public ICommand DeleteCommand { get; set; }
+        public ICommand DisplayCommand { get; set; }
+
+        public AgendaViewModel(IAgendaService contatoRepository)
+        {
+            ContatoAtual = new Contato();
+
+            AddCommand = new Command(
+                async () =>
+                {
+                    await contatoRepository.InitializeAsync();
+                    await contatoRepository.AddContato(ContatoAtual);
+                    await Refresh(contatoRepository);
+                }
+            );
+
+            UpdateCommand = new Command(
+                async () =>
+                {
+                    await contatoRepository.InitializeAsync();
+                    await contatoRepository.UpdateContato(ContatoAtual);
+                    await Refresh(contatoRepository);
+                }
+            );
+
+            DeleteCommand = new Command(
+                async () =>
+                {
+                    await contatoRepository.InitializeAsync();
+
+                    var resposta = await App.Current.MainPage.DisplayAlert("Alerta", "Confirma exclusão ?", "Sim", "Não");
+                    if (resposta)
+                        await contatoRepository.DeleteContato(ContatoAtual);
+
+                    await Refresh(contatoRepository);
+                }
+            );
+
+            DisplayCommand = new Command(
+                async() =>
+                {
+                    await contatoRepository.InitializeAsync();
+                    await Refresh(contatoRepository);
+                }
+            );
+        }
+
+        private async Task Refresh(IAgendaService contato)
+        {
+            Contatos = await contato.GetContatos();
+        }
+    }
+}
+```
+
+2. Editar o arquivo **MauiProgam.cs** para registrar o serviço na container DI
    
 ```
 using Microsoft.Extensions.Logging;
@@ -229,9 +234,7 @@ namespace AgendaApp
 }
 ```
 
-## Injetar o serviço na aplicação
-
-1. No arquivo **AgendaView.xaml.cs**, injetar classe serviço
+3. No arquivo **AgendaView.xaml.cs**, injetar classe serviço
    
 ```
 using AgendaApp.MVVM.ViewModels;
@@ -249,4 +252,4 @@ public partial class AgendaView : ContentPage
 }
 ```
 
-2. AAAAAAAAA
+4. AAAA
