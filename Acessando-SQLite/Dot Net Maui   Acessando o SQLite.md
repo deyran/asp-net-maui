@@ -279,4 +279,50 @@ namespace AgendaApp
 xmlns:local="clr-namespace:AgendaApp.MVVM.ViewModels"
 ```
 
-2. AAAA
+2. Estrutura da interface
+   
+```
+<Grid RowDefinitions=".3*,.9*" Padding="10">
+
+    <VerticalStackLayout Padding="10" Margin="5">
+        <Entry x:Name="txtNome" Placeholder="Nome" Text="{Binding ContatoAtual.Nome, Mode=TwoWay}" FontSize="Medium"  />
+        <Entry x:Name="txtEmail" Placeholder="Email" Text="{Binding ContatoAtual.Email, Mode=TwoWay}" FontSize="Medium" />
+        <HorizontalStackLayout HorizontalOptions="Center" Padding="5" Spacing="10">
+            <Button Command="{Binding AddCommand}" Text="Incluir" BackgroundColor="Blue" FontAttributes="Bold"/>
+            <Button Command="{Binding UpdateCommand}" Text="Alterar" BackgroundColor="Green" FontAttributes="Bold"/>
+            <Button Command="{Binding DisplayCommand}" Text="Carregar" BackgroundColor="Black" FontAttributes="Bold"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+
+    <CollectionView
+        Grid.Row="1" Margin="5"
+        ItemsSource="{Binding Contatos}"
+        SelectedItem="{Binding ContatoAtual}"
+        SelectionMode="Single">
+        <CollectionView.ItemTemplate>
+
+            <DataTemplate>
+
+                <SwipeView>
+                    <SwipeView.LeftItems>
+                        <SwipeItems>
+                            <SwipeItem
+                                BackgroundColor="Purple"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:AgendaViewModel}}, Path=DeleteCommand}"
+                                Text="Deleta" />
+                        </SwipeItems>
+                    </SwipeView.LeftItems>
+
+                    <Grid ColumnDefinitions=".4*,.6*">
+                        <Label Text="{Binding Nome}" FontSize="15" />
+                        <Label Grid.Column="1" Text="{Binding Email}" FontSize="15" TextColor="Blue" />
+                    </Grid>
+
+                </SwipeView>
+
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+
+</Grid>
+```
