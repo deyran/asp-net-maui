@@ -271,4 +271,12 @@ namespace AgendaApp
 }
 ```
 
-5. AAAAAA
+## Implementação da interface da aplicação
+
+1. Na página AgendaView.xaml, definir o namespace da classe ViewModels
+
+```
+xmlns:local="clr-namespace:AgendaApp.MVVM.ViewModels"
+```
+
+2. AAAA
