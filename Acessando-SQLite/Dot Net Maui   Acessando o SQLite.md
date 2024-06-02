@@ -29,9 +29,9 @@
 
 Permite criar, pesquisar e editar banco de dados SQLite
 
-## Criar classes modelo de domínio e Serviço
+## Criar classe modelo de domínio
 
-1. No diretório MVVM/Models
+* No diretório MVVM/Models criar a classe modelo Contato
 
 ```
 using SQLite;
@@ -50,13 +50,15 @@ public class Contato
 }
 ```
 
-2. No diretório Services -> IAgendaService
+## Criar classe de serviço
+
+1. No diretório Services, criar a interface **IAgendaService.cs**
 
 ```
 public interface IAgendaService
 {
     Task InitializeAsync();
-    Task<List<Contato>> GetContato();
+    Task<List<Contato>> GetContatos();
     Task<Contato> GetContato(int contatoId);
     Task<int> AddContato(Contato contato);
     Task<int> UpdateContato(Contato contato);
@@ -64,65 +66,11 @@ public interface IAgendaService
 }
 ```
 
-3. Services/AgendaService
-
-```
-using SQLite;
-
-public class AgendaService : IAgendaService
-{
-    private SQLiteAsyncConnection _dbConnection;
-
-    public async Task InitializeAsync()
-    {
-        await SetUpDb();
-    }
-
-    private async Task SetUpDb()
-    {
-        if (_dbConnection == null)
-        {
-            string dbPath = Path.Combine(
-                Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                "Agenda.db3"
-            );
-
-            _dbConnection = new SQLiteAsyncConnection(dbPath);
-            
-            await _dbConnection.CreateTableAsync<Contato>();
-        }
-    }
-
-    public async Task<int> AddContato(Contato contato)
-    {
-        return await _dbConnection.InsertAsync(contato);
-    }
-
-    public async Task<int> DeleteContato(Contato contato)
-    {
-        return await _dbConnection.DeleteAsync(contato);
-    }
-
-    public async Task<int> UpdateContato(Contato contato)
-    {
-        return await _dbConnection.UpdateAsync(contato);
-    }
-
-    public async Task<List<Contato>> GetContatos()
-    {
-        return await _dbConnection.Table<Contato>().ToListAsync();
-    }
-
-    public async Task<Contato> GetContato(int contatoId)
-    {
-        return await _dbConnection.Table<Contato>().FirstOrDefaultAsync(x => x.Id == contatoId);
-    }
-}
-```
 
 ## Injetar o serviço na aplicação
 
-1. Editar o arquivo MauiProgam.cs, como mostrado abaixo
+
+2. Editar o arquivo MauiProgam.cs, como mostrado abaixo
 
 ```
 using Microsoft.Extensions.Logging;
@@ -161,8 +109,7 @@ namespace AgendaApp
 ```
 ```
 
-4. AAAA
-   
+4. 
 5. Editar o arquivo App.xaml.cs para injetar IAgendaService
 
 ```
