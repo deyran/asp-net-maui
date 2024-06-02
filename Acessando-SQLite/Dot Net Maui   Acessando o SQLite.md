@@ -29,27 +29,6 @@
 
 Permite criar, pesquisar e editar banco de dados SQLite
 
-## Criar classe modelo de domínio
-
-* No diretório MVVM/Models criar a classe modelo Contato
-
-```
-using SQLite;
-
-[Table("Contato")]
-public class Contato
-{
-	[PrimaryKey, AutoIncrement]
-	public int Id { get; set; }
-
-	[MaxLength(100), NotNull]
-	public string Nome { get; set; }
-
-	[MaxLength(200), NotNull]
-	public string Email { get; set; }
-}
-```
-
 ## Criar classe de serviço
 
 1. No diretório Services, criar a interface **IAgendaService.cs**
@@ -156,7 +135,26 @@ namespace AgendaApp
 
 ## Implementar a arquitetura MVVM
   
-1. No diretório **MVVM/ViewModels** criar e implementar a classe **AgendaViewModel.cs**
+1. No diretório **MVVM/Models** implementar a classe modelo Contato 
+   
+```
+using SQLite;
+
+[Table("Contato")]
+public class Contato
+{
+	[PrimaryKey, AutoIncrement]
+	public int Id { get; set; }
+
+	[MaxLength(100), NotNull]
+	public string Nome { get; set; }
+
+	[MaxLength(200), NotNull]
+	public string Email { get; set; }
+}
+```
+
+2. No diretório **MVVM/ViewModels** implementar e classe **AgendaViewModel.cs**
    
 ```
 ```
