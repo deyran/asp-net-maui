@@ -29,6 +29,100 @@
 
 Permite criar, pesquisar e editar banco de dados SQLite
 
+## Implementar a arquitetura MVVM
+  
+1. No diretório **MVVM/Models** implementar a classe modelo Contato 
+   
+```
+using SQLite;
+
+[Table("Contato")]
+public class Contato
+{
+	[PrimaryKey, AutoIncrement]
+	public int Id { get; set; }
+
+	[MaxLength(100), NotNull]
+	public string Nome { get; set; }
+
+	[MaxLength(200), NotNull]
+	public string Email { get; set; }
+}
+```
+
+2. No diretório **MVVM/ViewModels** implementar e classe **AgendaViewModel.cs**
+   
+```
+using CommunityToolkit.Mvvm.ComponentModel;
+using System.Windows.Input;
+
+namespace AgendaApp.MVVM.ViewModels
+{
+    public partial class AgendaViewModel : ObservableObject
+    {
+        [ObservableProperty]
+        private List<Contato> _contatos;
+
+        [ObservableProperty]
+        private Contato _contatoAtual;
+
+        public ICommand AddCommand { get; set; }
+        public ICommand UpdateCommand { get; set; }
+        public ICommand DeleteCommand { get; set; }
+        public ICommand DisplayCommand { get; set; }
+
+        public AgendaViewModel(IAgendaService contatoRepository)
+        {
+            ContatoAtual = new Contato();
+
+            AddCommand = new Command(
+                async () =>
+                {
+                    await contatoRepository.InitializeAsync();
+                    await contatoRepository.AddContato(ContatoAtual);
+                    await Refresh(contatoRepository);
+                }
+            );
+
+            UpdateCommand = new Command(
+                async () =>
+                {
+                    await contatoRepository.InitializeAsync();
+                    await contatoRepository.UpdateContato(ContatoAtual);
+                    await Refresh(contatoRepository);
+                }
+            );
+
+            DeleteCommand = new Command(
+                async () =>
+                {
+                    await contatoRepository.InitializeAsync();
+
+                    var resposta = await App.Current.MainPage.DisplayAlert("Alerta", "Confirma exclusão ?", "Sim", "Não");
+                    if (resposta)
+                        await contatoRepository.DeleteContato(ContatoAtual);
+
+                    await Refresh(contatoRepository);
+                }
+            );
+
+            DisplayCommand = new Command(
+                async() =>
+                {
+                    await contatoRepository.InitializeAsync();
+                    await Refresh(contatoRepository);
+                }
+            );
+        }
+
+        private async Task Refresh(IAgendaService contato)
+        {
+            Contatos = await contato.GetContatos();
+        }
+    }
+}
+```
+
 ## Criar classe de serviço
 
 1. No diretório Services, criar a interface **IAgendaService.cs**
@@ -132,29 +226,3 @@ namespace AgendaApp
     }
 }
 ```   
-
-## Implementar a arquitetura MVVM
-  
-1. No diretório **MVVM/Models** implementar a classe modelo Contato 
-   
-```
-using SQLite;
-
-[Table("Contato")]
-public class Contato
-{
-	[PrimaryKey, AutoIncrement]
-	public int Id { get; set; }
-
-	[MaxLength(100), NotNull]
-	public string Nome { get; set; }
-
-	[MaxLength(200), NotNull]
-	public string Email { get; set; }
-}
-```
-
-2. No diretório **MVVM/ViewModels** implementar e classe **AgendaViewModel.cs**
-   
-```
-```
