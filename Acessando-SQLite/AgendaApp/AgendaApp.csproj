@@ -68,9 +68,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="MVVM\ViewModels\AgendaViewModel.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="MVVM\Views\AgendaView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -156,7 +156,14 @@ namespace AgendaApp
 
 2. No diretório **MVVM/Views** criar a página AgendaView e no diretório **MVVM/ViewModels** criar a página AgendaViewModel
    
-3. Editar o arquivo App.xaml.cs para injetar IAgendaService
+3. Implementar a classe AgendaViewModel.cs
+   
+```
+```
+
+4. AAAA
+   
+5. Editar o arquivo App.xaml.cs para injetar IAgendaService
 
 ```
 using AgendaApp.MVVM.Views;
