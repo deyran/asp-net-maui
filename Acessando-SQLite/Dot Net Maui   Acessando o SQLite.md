@@ -231,3 +231,22 @@ namespace AgendaApp
 
 ## Injetar o serviço na aplicação
 
+1. No arquivo **AgendaView.xaml.cs**, injetar classe serviço
+   
+```
+using AgendaApp.MVVM.ViewModels;
+
+namespace AgendaApp.MVVM.Views;
+
+public partial class AgendaView : ContentPage
+{
+	public AgendaView(IAgendaService service)
+	{
+		InitializeComponent();
+ 
+        BindingContext = new AgendaViewModel(service);
+    }
+}
+```
+
+2. AAAAAAAAA
