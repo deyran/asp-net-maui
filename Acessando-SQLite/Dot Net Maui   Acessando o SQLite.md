@@ -154,7 +154,7 @@ namespace AgendaApp
 }
 ```
 
-2. No diretório **MVVM/Views** criar a página AgendaView e no diretório **MVVM/ViewModels** criar a página AgendaViewModel
+2. No diretório **MVVM/Views** criar a página AgendaView e no diretório **MVVM/ViewModels** criar a classe AgendaViewModel.cs
    
 3. Implementar a classe AgendaViewModel.cs
    
