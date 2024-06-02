@@ -11,11 +11,12 @@
         <VerticalStackLayout Padding="10" Margin="5">
             <Entry x:Name="txtNome" Placeholder="Nome" Text="{Binding ContatoAtual.Nome, Mode=TwoWay}" FontSize="Medium"  />
             <Entry x:Name="txtEmail" Placeholder="Email" Text="{Binding ContatoAtual.Email, Mode=TwoWay}" FontSize="Medium" />
+            
             <HorizontalStackLayout HorizontalOptions="Center" Padding="5" Spacing="10">
                 <Button Command="{Binding AddCommand}" Text="Incluir" BackgroundColor="Blue" FontAttributes="Bold"/>
                 <Button Command="{Binding UpdateCommand}" Text="Alterar" BackgroundColor="Green" FontAttributes="Bold"/>
                 <Button Command="{Binding DisplayCommand}" Text="Carregar" BackgroundColor="Black" FontAttributes="Bold"/>
-            </HorizontalStackLayout>
+            </HorizontalStackLayout>            
         </VerticalStackLayout>
 
         <CollectionView

@@ -1,4 +1,4 @@
-# .NET MAUI :  Acessando o SQLite
+# [.NET MAUI :  Acessando o SQLite](https://youtu.be/F5kDagLBlPw?si=LqIhYVngpmaqIxX7)
 
 ## Pacotes a serem instalados
 
