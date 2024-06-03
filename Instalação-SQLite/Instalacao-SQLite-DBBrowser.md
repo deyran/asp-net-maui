@@ -16,3 +16,6 @@
 
 ## Instação do DB Browser
 
+1. No site oficial do [Db Browser](https://sqlitebrowser.org/), vá em download
+
+2. Executar o arquivo baixado
