@@ -5,18 +5,19 @@
 
     <VerticalStackLayout Padding="30,0" Spacing="25">
 
-        <Picker 
-            x:Name="PickerTest01" 
-            Title="Select a monkey" 
-            SelectedIndexChanged="picker_SelectedIndexChanged">
+        <Picker x:Name="PickerTest01" Title="Select a monkey">
+            <Picker.Items>
+                <x:String>Baboon</x:String>
+                <x:String>Capuchin Monkey</x:String>
+                <x:String>Blue Monkey</x:String>
+                <x:String>Squirrel Monkey</x:String>
+                <x:String>Golden Lion Tamarin</x:String>
+                <x:String>Howler Monkey</x:String>
+                <x:String>Japanese Macaque</x:String>
+            </Picker.Items>
         </Picker>
 
-        <Button 
-            x:Name="BttDados" 
-            Text="Preencher dados" 
-            Clicked="BttDados_Clicked" />
-
-        <Label x:Name="LabelName" Text="Selecione um item no Picker" />        
+        <Label Text="{Binding Source={x:Reference PickerTest01}, Path=SelectedItem}" />
 
     </VerticalStackLayout>
 

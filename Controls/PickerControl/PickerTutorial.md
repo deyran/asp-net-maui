@@ -79,3 +79,21 @@ private void picker_SelectedIndexChanged(object sender, EventArgs e)
     }
 }
 ```
+
+## Label vinculado ao Picker
+
+```
+<Picker x:Name="PickerTest01" Title="Select a monkey">
+    <Picker.Items>
+        <x:String>Baboon</x:String>
+        <x:String>Capuchin Monkey</x:String>
+        <x:String>Blue Monkey</x:String>
+        <x:String>Squirrel Monkey</x:String>
+        <x:String>Golden Lion Tamarin</x:String>
+        <x:String>Howler Monkey</x:String>
+        <x:String>Japanese Macaque</x:String>
+    </Picker.Items>
+</Picker>
+
+<Label Text="{Binding Source={x:Reference PickerTest01}, Path=SelectedItem}" />
+```
