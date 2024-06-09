@@ -1,6 +1,6 @@
 # Picker tutorial
 
-## Dados estáticos
+## Dados estáticos na página
 
 ```
 <Picker x:Name="PickerTest01" Title="Select a monkey" SelectedIndexChanged="picker_SelectedIndexChanged">
@@ -14,6 +14,43 @@
         <x:String>Japanese Macaque</x:String>
     </Picker.Items>
 </Picker>
+```
+
+## Dados estáticos no Código
+
+1. Na página
+
+```
+<Picker 
+    x:Name="PickerTest01" 
+    Title="Select a monkey" 
+    SelectedIndexChanged="picker_SelectedIndexChanged">
+</Picker>
+
+<Button 
+    x:Name="BttDados" 
+    Text="Preencher dados" 
+    Clicked="BttDados_Clicked" />
+```
+
+2. No código
+
+```
+private void BttDados_Clicked(object sender, EventArgs e)
+{
+    var monkeyList = new List<string>();
+
+    monkeyList.Add("Baboon");
+    monkeyList.Add("Capuchin Monkey");
+    monkeyList.Add("Blue Monkey");
+    monkeyList.Add("Squirrel Monkey");
+    monkeyList.Add("Golden Lion Tamarin");
+    monkeyList.Add("Howler Monkey");
+    monkeyList.Add("Japanese Macaque");
+
+    PickerTest01.Title = "Select a monkey";
+    PickerTest01.ItemsSource = monkeyList;
+}
 ```
 
 ## Evento SelectedIndexChanged
