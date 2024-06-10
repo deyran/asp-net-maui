@@ -97,3 +97,59 @@ private void picker_SelectedIndexChanged(object sender, EventArgs e)
 
 <Label Text="{Binding Source={x:Reference PickerTest01}, Path=SelectedItem}" />
 ```
+
+## Connectar dados do Picker a uma fonte de dados
+
+1. Classe Pessoa
+
+```
+namespace PickerControl.Models
+{
+    public class Pessoas
+    {
+        public int IdPessoa { get; set; }
+        public string Nome { get; set; }
+    }
+}
+```
+
+2. Na página MainPage.xaml
+   
+```
+<Picker 
+    x:Name="PessoasPicker" 
+    Title="Selecionar Pessoa"
+    ItemsSource="{Binding PessoasList}"
+    ItemDisplayBinding="{Binding Nome}">            
+</Picker>
+```
+
+3. No arquivo MainPage.xaml.cs
+   
+```
+using PickerControl.Models;
+using System.Collections.ObjectModel;
+
+namespace PickerControl
+{
+    public partial class MainPage : ContentPage
+    {
+        public ObservableCollection<Pessoas> PessoasList { get; set; }
+        public MainPage()
+        {
+            InitializeComponent();
+
+            PessoasList = new ObservableCollection<Pessoas>
+            {
+                new Pessoas { IdPessoa = 0, Nome = "Deyvid Rannyere de Moraes Costa" },
+                new Pessoas { IdPessoa = 1, Nome = "Márcia Costa de Moraes" },
+                new Pessoas { IdPessoa = 2, Nome = "Lara Hellena Costa de Moraes" }
+            };
+
+            BindingContext = this;
+        }
+    }
+}
+```
+
+4. AAAAA
