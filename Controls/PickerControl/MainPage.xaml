@@ -10,8 +10,8 @@
             Title="Selecionar Pessoa"
             ItemsSource="{Binding PessoasList}"
             ItemDisplayBinding="{Binding Nome}">            
-        </Picker>
-        
+        </Picker>       
+
     </VerticalStackLayout>
 
 </ContentPage>

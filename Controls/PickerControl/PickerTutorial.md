@@ -151,5 +151,3 @@ namespace PickerControl
     }
 }
 ```
-
-4. AAAAA
