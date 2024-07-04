@@ -14,3 +14,5 @@
 ## Part 1
 
 * [21:18](https://youtu.be/DuNLR_NJv8U?t=1278) - Displaying Data
+
+https://youtu.be/DuNLR_NJv8U?t=1433
