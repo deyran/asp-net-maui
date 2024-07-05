@@ -16,7 +16,8 @@
 1. [dotnet-maui-workshop](https://github.com/dotnet-presentations/dotnet-maui-workshop) - Clone this repo
 2. [25:13](https://youtu.be/DuNLR_NJv8U?t=1513) Click on "MonkeyFinder.sln (Part 1 - Displaying Data\MonkeyFinder.sln)
 
-* A
+Continue -> https://youtu.be/DuNLR_NJv8U?t=1608
+
 * A
 * A
 * A
