@@ -40,7 +40,10 @@
         }
         ```
 
-   * AAAAAA
+   * [35:33](https://youtu.be/DuNLR_NJv8U?t=2133) - Blank screen
+   * A
+   * A
+   * AAA
 
 1. AAA
 
