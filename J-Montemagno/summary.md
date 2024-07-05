@@ -14,7 +14,7 @@
 * [22:06](https://youtu.be/DuNLR_NJv8U?t=1326) - Building our first applications
 
 1. [dotnet-maui-workshop](https://github.com/dotnet-presentations/dotnet-maui-workshop) - Clone this repo
-2. AA
+2. [25:11](https://youtu.be/DuNLR_NJv8U?t=1511) Click on "MonkeyFinder.sln (Part 1 - Displaying Data\MonkeyFinder.sln)
 
 * A
 * A
