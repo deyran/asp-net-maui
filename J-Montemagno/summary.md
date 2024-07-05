@@ -40,12 +40,27 @@
         }
         ```
 
-   * [35:33](https://youtu.be/DuNLR_NJv8U?t=2133) - Blank screen
-   * A
+   * MainPage test
+
+        ```
+        <?xml version="1.0" encoding="utf-8" ?>
+        <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="MonkeyFinder.View.MainPage">
+
+            <VerticalStackLayout Spacing="20" Padding="20">
+                <Button Text="Click me" BackgroundColor="Blue" TextColor="White"></Button>
+                <Button Text="Click me" BackgroundColor="Blue" TextColor="White"></Button>
+            </VerticalStackLayout>
+
+        </ContentPage>          
+        ```
+
+   * Continue -> https://youtu.be/DuNLR_NJv8U?t=2344
    * A
    * AAA
 
-1. AAA
+4. AAA
 
 * A
 * A
