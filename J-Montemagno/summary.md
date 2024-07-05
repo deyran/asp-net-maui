@@ -9,12 +9,12 @@
 * [18:43](https://youtu.be/DuNLR_NJv8U?t=1123) - Layout
 * [20:13](https://youtu.be/DuNLR_NJv8U?t=1213) - Providing Behavior
 
-## Part 1
+## Part 1 - Displaying Data
 
-* [22:06](https://youtu.be/DuNLR_NJv8U?t=1326) - Building our first applications
+### [22:06](https://youtu.be/DuNLR_NJv8U?t=1326) - Building our first applications
 
 1. [dotnet-maui-workshop](https://github.com/dotnet-presentations/dotnet-maui-workshop) - Clone this repo
-2. [25:11](https://youtu.be/DuNLR_NJv8U?t=1511) Click on "MonkeyFinder.sln (Part 1 - Displaying Data\MonkeyFinder.sln)
+2. [25:13](https://youtu.be/DuNLR_NJv8U?t=1513) Click on "MonkeyFinder.sln (Part 1 - Displaying Data\MonkeyFinder.sln)
 
 * A
 * A
