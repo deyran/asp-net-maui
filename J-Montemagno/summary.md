@@ -1,7 +1,5 @@
 # [Learn .NET MAUI - Full Course for Beginners | Build cross-platform apps in C#](https://youtu.be/DuNLR_NJv8U?si=5bi_V4ljtMNs5Wub)
 
-## [dotnet-maui-workshop](https://github.com/dotnet-presentations/dotnet-maui-workshop)
-
 ## Introduction
 
 * [08:58](https://youtu.be/DuNLR_NJv8U?t=538) - Project Structure
@@ -13,6 +11,19 @@
 
 ## Part 1
 
-* [21:18](https://youtu.be/DuNLR_NJv8U?t=1278) - Displaying Data
+* [22:06](https://youtu.be/DuNLR_NJv8U?t=1326) - Building our first applications
 
-https://youtu.be/DuNLR_NJv8U?t=1433
+1. [dotnet-maui-workshop](https://github.com/dotnet-presentations/dotnet-maui-workshop) - Clone this repo
+2. 
+
+* A
+* A
+* A
+* A
+* A
+* A
+* A
+* A
+* 
+* A
+* A
