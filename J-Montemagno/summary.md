@@ -21,8 +21,28 @@
    
    * [Mokey Json data](https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/MonkeysApp/monkeydata.json)
    * [Convert json to charp](https://json2csharp.com/)
+   * Monkey class
 
-4. AAA
+        ```
+        using System.Text.Json.Serialization;
+
+        namespace MonkeyFinder.Model;
+
+        public class Monkey
+        {
+            public string Name { get; set; }
+            public string Location { get; set; }
+            public string Details { get; set; }
+            public string Image { get; set; }
+            public int Population { get; set; }
+            public double Latitude { get; set; }
+            public double Longitude { get; set; }
+        }
+        ```
+
+   * AAAAAA
+
+1. AAA
 
 * A
 * A
