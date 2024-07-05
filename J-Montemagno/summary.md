@@ -17,7 +17,7 @@
       
 2. [25:13](https://youtu.be/DuNLR_NJv8U?t=1513) Click on "MonkeyFinder.sln (Part 1 - Displaying Data\MonkeyFinder.sln)
    
-3. [29:42](Continue -> https://youtu.be/DuNLR_NJv8U?t=1608) Monkey data
+3. [29:42](https://youtu.be/DuNLR_NJv8U?t=1608) Monkey data
    
    * [Mokey Json data](https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/MonkeysApp/monkeydata.json)
    * [Convert json to charp](https://json2csharp.com/)
