@@ -49,10 +49,19 @@
                 ```
                 xmlns:model="clr-namespace:MonkeyFinder.Model"
                 ```
-                
-            2. A
-            3. A
-            4. A
+
+            2. Structure of the CollectionView
+
+                ```
+                <CollectionView>
+                    <CollectionView.ItemsSource>
+
+                    </CollectionView.ItemsSource>
+                </CollectionView>
+
+                ```
+
+            3. A            
       
         2. AAA
    
