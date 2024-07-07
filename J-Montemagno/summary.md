@@ -41,6 +41,10 @@
         ```
 
    * [39:41](https://youtu.be/DuNLR_NJv8U?t=2381) CollectionView
+  
+        1. Static Collection
+        2. AAA
+   
    * AAA
 
 4. AAA
