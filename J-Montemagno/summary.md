@@ -43,6 +43,13 @@
    * [39:41](https://youtu.be/DuNLR_NJv8U?t=2381) CollectionView
   
         1. Static Collection
+     
+            1. Add the Model reference
+            2. A
+            3. A
+            4. A
+            5. A
+      
         2. AAA
    
    * AAA
