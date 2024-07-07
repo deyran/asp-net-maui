@@ -98,6 +98,47 @@
                 ```
 
         2. Working with more data
+
+            ```
+            <CollectionView>
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type model:Monkey}">
+                        <model:Monkey
+                            Name = "Baboon"
+                            Location = "Africa and Asia"
+                            Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg" />
+                        <model:Monkey
+                            Name = "Capuchin Monkey"
+                            Location = "Central and South America"
+                            Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/capuchin.jpg" />
+
+                        <model:Monkey
+                            Name = "Blue Monkey"
+                            Location = "Central and East Africa"
+                            Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/bluemonkey.jpg" />
+
+                    </x:Array>
+                </CollectionView.ItemsSource>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Monkey">
+                        <HorizontalStackLayout Padding="10">
+                            <Image Source="{Binding Image}"
+                                HeightRequest="100"
+                                WidthRequest="100"
+                                Aspect="AspectFill" />
+                            
+                            <VerticalStackLayout Padding="10" Spacing="10" VerticalOptions="Center">
+                                <Label Text="{Binding Name}" FontSize="24" />
+                                <Label Text="{Binding Location}" FontSize="10" />
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>            
+            ```
+
+        3. AAAA
    
    * AAA
 
