@@ -128,6 +128,19 @@
         </CollectionView>            
         ```
 
+    * Single label set up a binding multiple properties
+
+        ```
+        <Label VerticalOptions="Center">
+            <Label.Text>
+                <MultiBinding StringFormat="{}{0} | {1}">
+                    <Binding Path="Name" />
+                    <Binding Path="Location" />
+                </MultiBinding>
+            </Label.Text>
+        </Label>
+        ```
+
 5. A
 6. A
 7. A
