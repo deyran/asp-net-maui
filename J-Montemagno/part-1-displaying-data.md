@@ -33,101 +33,100 @@
 
 4. [39:41](https://youtu.be/DuNLR_NJv8U?t=2381) CollectionView
   
-  1. Static Collection
+   * Static Collection
 
-      1. Add the Model reference
-   
-          ```
-          xmlns:model="clr-namespace:MonkeyFinder.Model"
-          ```
+     1. Add the Model reference
 
-      2. Structure of the CollectionView
+       ```
+       xmlns:model="clr-namespace:MonkeyFinder.Model"
+       ```
 
-          ```
-          <CollectionView>
-              <CollectionView.ItemsSource>
+     2. Structure of the CollectionView
 
-              </CollectionView.ItemsSource>
-          </CollectionView>
-          ```
+       ```
+       <CollectionView>
+           <CollectionView.ItemsSource>
 
-      3. Specifying the static Collection and putting data
+           </CollectionView.ItemsSource>
+       </CollectionView>
+       ```
+     3. Specifying the static Collection and putting data
 
-          ```
-          <CollectionView>
-              <CollectionView.ItemsSource>
-                  <x:Array Type="{x:Type model:Monkey}">
-                      <model:Monkey Name="Baboon" />
-                      <model:Monkey Name="Capuchin Monkey" />
-                      <model:Monkey Name="Red-shanked douc" />
-                  </x:Array>            
-              </CollectionView.ItemsSource>
-          </CollectionView>
-          ```
+        ```
+        <CollectionView>
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type model:Monkey}">
+                    <model:Monkey Name="Baboon" />
+                    <model:Monkey Name="Capuchin Monkey" />
+                    <model:Monkey Name="Red-shanked douc" />
+                </x:Array>            
+            </CollectionView.ItemsSource>
+        </CollectionView>
+        ```
 
-      4. Using **Item template** 
-   
-          Item template is used to define specifically what each of items looks like. Look in the code below:
+   * Using **Item template** 
 
-          ```
-          <CollectionView>
-              <CollectionView.ItemsSource>
-                  <x:Array Type="{x:Type model:Monkey}">
-                      <model:Monkey Name="Baboon" />
-                      <model:Monkey Name="Capuchin Monkey" />
-                      <model:Monkey Name="Red-shanked douc" />
-                  </x:Array>            
-              </CollectionView.ItemsSource>
-              <CollectionView.ItemTemplate>
-                  <DataTemplate x:DataType="model:Monkey">
-                      <HorizontalStackLayout Padding="10">
-                          <Label Text="{Binding Name}" />
-                      </HorizontalStackLayout>
-                  </DataTemplate>
-              </CollectionView.ItemTemplate>
-          </CollectionView>
-          ```
+       Item template is used to define specifically what each of items looks like. Look in the code below:
 
-  2. Working with more data
+       ```
+       <CollectionView>
+           <CollectionView.ItemsSource>
+               <x:Array Type="{x:Type model:Monkey}">
+                   <model:Monkey Name="Baboon" />
+                   <model:Monkey Name="Capuchin Monkey" />
+                   <model:Monkey Name="Red-shanked douc" />
+               </x:Array>            
+           </CollectionView.ItemsSource>
+           <CollectionView.ItemTemplate>
+               <DataTemplate x:DataType="model:Monkey">
+                   <HorizontalStackLayout Padding="10">
+                       <Label Text="{Binding Name}" />
+                   </HorizontalStackLayout>
+               </DataTemplate>
+           </CollectionView.ItemTemplate>
+       </CollectionView>
+       ```
 
-      ```
-      <CollectionView>
-          <CollectionView.ItemsSource>
-              <x:Array Type="{x:Type model:Monkey}">
-                  <model:Monkey
-                      Name = "Baboon"
-                      Location = "Africa and Asia"
-                      Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg" />
-                  <model:Monkey
-                      Name = "Capuchin Monkey"
-                      Location = "Central and South America"
-                      Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/capuchin.jpg" />
+   * Working with more data
 
-                  <model:Monkey
-                      Name = "Blue Monkey"
-                      Location = "Central and East Africa"
-                      Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/bluemonkey.jpg" />
+        ```
+        <CollectionView>
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type model:Monkey}">
+                    <model:Monkey
+                        Name = "Baboon"
+                        Location = "Africa and Asia"
+                        Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg" />
+                    <model:Monkey
+                        Name = "Capuchin Monkey"
+                        Location = "Central and South America"
+                        Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/capuchin.jpg" />
 
-              </x:Array>
-          </CollectionView.ItemsSource>
+                    <model:Monkey
+                        Name = "Blue Monkey"
+                        Location = "Central and East Africa"
+                        Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/bluemonkey.jpg" />
 
-          <CollectionView.ItemTemplate>
-              <DataTemplate x:DataType="model:Monkey">
-                  <HorizontalStackLayout Padding="10">
-                      <Image Source="{Binding Image}"
-                          HeightRequest="100"
-                          WidthRequest="100"
-                          Aspect="AspectFill" />
-                      
-                      <VerticalStackLayout Padding="10" Spacing="10" VerticalOptions="Center">
-                          <Label Text="{Binding Name}" FontSize="24" />
-                          <Label Text="{Binding Location}" FontSize="10" />
-                      </VerticalStackLayout>
-                  </HorizontalStackLayout>
-              </DataTemplate>
-          </CollectionView.ItemTemplate>
-      </CollectionView>            
-      ```
+                </x:Array>
+            </CollectionView.ItemsSource>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Monkey">
+                    <HorizontalStackLayout Padding="10">
+                        <Image Source="{Binding Image}"
+                            HeightRequest="100"
+                            WidthRequest="100"
+                            Aspect="AspectFill" />
+                        
+                        <VerticalStackLayout Padding="10" Spacing="10" VerticalOptions="Center">
+                            <Label Text="{Binding Name}" FontSize="24" />
+                            <Label Text="{Binding Location}" FontSize="10" />
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>            
+        ```
 
 5. A
 6. A
