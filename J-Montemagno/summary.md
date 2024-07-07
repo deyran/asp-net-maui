@@ -45,10 +45,14 @@
         1. Static Collection
      
             1. Add the Model reference
+         
+                ```
+                xmlns:model="clr-namespace:MonkeyFinder.Model"
+                ```
+                
             2. A
             3. A
             4. A
-            5. A
       
         2. AAA
    
