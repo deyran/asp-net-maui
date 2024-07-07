@@ -74,6 +74,29 @@
                 </CollectionView>
                 ```
 
+            4. Using **Item template** 
+         
+                Item template is used to define specifically what each of items looks like. Look in the code below:
+
+                ```
+                <CollectionView>
+                    <CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type model:Monkey}">
+                            <model:Monkey Name="Baboon" />
+                            <model:Monkey Name="Capuchin Monkey" />
+                            <model:Monkey Name="Red-shanked douc" />
+                        </x:Array>            
+                    </CollectionView.ItemsSource>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Monkey">
+                            <HorizontalStackLayout Padding="10">
+                                <Label Text="{Binding Name}" />
+                            </HorizontalStackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                ```
+
         2. AAA
    
    * AAA
