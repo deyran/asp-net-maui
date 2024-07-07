@@ -40,24 +40,7 @@
         }
         ```
 
-   * MainPage test
-
-        ```
-        <?xml version="1.0" encoding="utf-8" ?>
-        <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                    x:Class="MonkeyFinder.View.MainPage">
-
-            <VerticalStackLayout Spacing="20" Padding="20">
-                <Button Text="Click me" BackgroundColor="Blue" TextColor="White"></Button>
-                <Button Text="Click me" BackgroundColor="Blue" TextColor="White"></Button>
-            </VerticalStackLayout>
-
-        </ContentPage>          
-        ```
-
-   * Continue -> https://youtu.be/DuNLR_NJv8U?t=2344
-   * A
+   * [39:41](https://youtu.be/DuNLR_NJv8U?t=2381) CollectionView
    * AAA
 
 4. AAA
