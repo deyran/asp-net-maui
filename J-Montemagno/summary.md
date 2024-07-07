@@ -58,11 +58,22 @@
 
                     </CollectionView.ItemsSource>
                 </CollectionView>
-
                 ```
 
-            3. A            
+            3. Specifying the static Collection and putting data
       
+                ```
+                <CollectionView>
+                    <CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type model:Monkey}">
+                            <model:Monkey Name="Baboon" />
+                            <model:Monkey Name="Capuchin Monkey" />
+                            <model:Monkey Name="Red-shanked douc" />
+                        </x:Array>            
+                    </CollectionView.ItemsSource>
+                </CollectionView>
+                ```
+
         2. AAA
    
    * AAA
