@@ -31,9 +31,9 @@
         }
         ```
 
-4. [39:41](https://youtu.be/DuNLR_NJv8U?t=2381) Static Collection
+4. [39:41](https://youtu.be/DuNLR_NJv8U?t=2381) Collection
 
-    1. Add the Model reference
+    1. In the **View/MainPage.xaml** file, Add the Model reference
 
         ```
         xmlns:model="clr-namespace:MonkeyFinder.Model"
