@@ -106,6 +106,31 @@
                         Location = "Central and East Africa"
                         Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/bluemonkey.jpg" />
 
+                    <model:Monkey
+                        Name = "Squirrel Monkey"
+                        Location = "Central and South America"
+                        Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/saimiri.jpg" />
+
+                    <model:Monkey
+                        Name = "Golden Lion Tamarin"
+                        Location = "Brazil"
+                        Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/tamarin.jpg" />
+
+                    <model:Monkey
+                        Name = "Howler Monkey"
+                        Location = "South America"
+                        Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/alouatta.jpg" />
+
+                    <model:Monkey
+                        Name = "Japanese Macaque"
+                        Location = "Japan"
+                        Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/macasa.jpg" />
+
+                    <model:Monkey
+                        Name = "Mandrill"
+                        Location = "Southern Cameroon, Gabon, and Congo"
+                        Image = "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/mandrill.jpg" />
+
                 </x:Array>
             </CollectionView.ItemsSource>
 
@@ -119,7 +144,7 @@
                         
                         <VerticalStackLayout Padding="10" Spacing="10" VerticalOptions="Center">
                             <Label Text="{Binding Name}" FontSize="24" />
-                            <Label Text="{Binding Location}" FontSize="10" />
+                            <Label Text="{Binding Location}" FontSize="12" />
                         </VerticalStackLayout>
                     </HorizontalStackLayout>
                 </DataTemplate>
