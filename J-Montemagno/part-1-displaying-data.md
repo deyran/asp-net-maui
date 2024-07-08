@@ -31,26 +31,25 @@
         }
         ```
 
-4. [39:41](https://youtu.be/DuNLR_NJv8U?t=2381) CollectionView
-  
-   * Static Collection
+4. [39:41](https://youtu.be/DuNLR_NJv8U?t=2381) Static Collection
 
-     1. Add the Model reference
+    1. Add the Model reference
 
-       ```
-       xmlns:model="clr-namespace:MonkeyFinder.Model"
-       ```
+        ```
+        xmlns:model="clr-namespace:MonkeyFinder.Model"
+        ```
 
-     2. Structure of the CollectionView
+    2. Structure of the CollectionView
 
-       ```
-       <CollectionView>
-           <CollectionView.ItemsSource>
+        ```
+        <CollectionView>
+            <CollectionView.ItemsSource>
 
-           </CollectionView.ItemsSource>
-       </CollectionView>
-       ```
-     3. Specifying the static Collection and putting data
+            </CollectionView.ItemsSource>
+        </CollectionView>
+        ```
+
+    3. Specifying the static Collection and putting data
 
         ```
         <CollectionView>
@@ -64,30 +63,30 @@
         </CollectionView>
         ```
 
-   * Using **Item template** 
+    4. Using **Item template** 
 
-       Item template is used to define specifically what each of items looks like. Look in the code below:
+        Item template is used to define specifically what each of items looks like. Look in the code below:
 
-       ```
-       <CollectionView>
-           <CollectionView.ItemsSource>
-               <x:Array Type="{x:Type model:Monkey}">
-                   <model:Monkey Name="Baboon" />
-                   <model:Monkey Name="Capuchin Monkey" />
-                   <model:Monkey Name="Red-shanked douc" />
-               </x:Array>            
-           </CollectionView.ItemsSource>
-           <CollectionView.ItemTemplate>
-               <DataTemplate x:DataType="model:Monkey">
-                   <HorizontalStackLayout Padding="10">
-                       <Label Text="{Binding Name}" />
-                   </HorizontalStackLayout>
-               </DataTemplate>
-           </CollectionView.ItemTemplate>
-       </CollectionView>
-       ```
+        ```
+        <CollectionView>
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type model:Monkey}">
+                    <model:Monkey Name="Baboon" />
+                    <model:Monkey Name="Capuchin Monkey" />
+                    <model:Monkey Name="Red-shanked douc" />
+                </x:Array>            
+            </CollectionView.ItemsSource>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Monkey">
+                    <HorizontalStackLayout Padding="10">
+                        <Label Text="{Binding Name}" />
+                    </HorizontalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        ```
 
-   * Working with more data
+    5. Working with more data
 
         ```
         <CollectionView>
@@ -128,7 +127,7 @@
         </CollectionView>            
         ```
 
-    * Single label set up a binding multiple properties
+    6. Single label set up a binding multiple properties
 
         ```
         <Label VerticalOptions="Center">
