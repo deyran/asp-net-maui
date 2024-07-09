@@ -8,7 +8,7 @@
    
 2. **View** -  How to display the information, it doesn't know about where the data is coming from. It just display data in a specific way.
    
-3. AAA
+3. **ViewModel** - It's like the code behind our View. Tells the page what to display
 
 ### AAA
 
