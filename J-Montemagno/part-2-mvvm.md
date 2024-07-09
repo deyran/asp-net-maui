@@ -2,7 +2,7 @@
 
 ## The basics
 
-### [View-Model-ViewModel](https://youtu.be/DuNLR_NJv8U?t=3454)
+### [Model-View-ViewModel](https://youtu.be/DuNLR_NJv8U?t=3454)
    
 1. Is an architecture pattern used to **separate of concerns** of the Code.
    
