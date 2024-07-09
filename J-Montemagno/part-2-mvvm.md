@@ -39,6 +39,6 @@ public class BaseViewModel : INotifyPropertyChanged
 }
 ```
 
-2. A
-3. A
+2. https://youtu.be/DuNLR_NJv8U?t=4255
+
 4. A
