@@ -4,7 +4,7 @@
 
 ### [View-ViewModel-Model](https://youtu.be/DuNLR_NJv8U?t=3454)
 
-1. Is an architecture pattern used to **separation of concerns** of the Code. The picure below show the interaction between View, ViewModel and Model.
+1. Is an architecture pattern used to **separation of concerns** of the Code. The image below shows the interaction between View, ViewModel and Model.
 
 <p align="center">
     <img src="part-2-mvvm-imgs/view-viewModel-model.png" />
@@ -17,5 +17,13 @@
 4. **Model** - Business logic and Data handling. The Model encapsulates the application's business logic and manages data. Essentially, it's responsible for handling data persistence and manipulation.
 
 ### [Data Binding](https://youtu.be/DuNLR_NJv8U?t=3632)
+
+1. Data bindng synchronizes the values of UI elements (views) with underlying data (often from a view model). When the data property changes or the events happen, for example, the view automatically reflects the update. The image below shows the interaction between View, Data Binding and ModelView
+
+<p align="center">
+    <img src="part-2-mvvm-imgs/data-binding.png" />
+</p>  
+
+2. AAA
 
 ## [Let's do it!](https://youtu.be/DuNLR_NJv8U?t=4139)
