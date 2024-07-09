@@ -4,7 +4,7 @@
 
 ### [View-ViewModel-Model](https://youtu.be/DuNLR_NJv8U?t=3454)
 
-1. Is an architecture pattern used to **separate of concerns** of the Code. The picure below show the interaction between View, ViewModel and Model.
+1. Is an architecture pattern used to **separation of concerns** of the Code. The picure below show the interaction between View, ViewModel and Model.
 
 <p align="center">
     <img src="part-2-mvvm-imgs/view-viewModel-model.png" />
