@@ -10,6 +10,6 @@
    
 3. **ViewModel** - It's like the code behind our View. Tells the page what to display
 
-### AAA
+### [Data Binding](https://youtu.be/DuNLR_NJv8U?t=3632)
 
 ## [Let's do it!](https://youtu.be/DuNLR_NJv8U?t=4139)
