@@ -18,7 +18,7 @@
 
 ### [Data Binding](https://youtu.be/DuNLR_NJv8U?t=3632)
 
-1. **Data binding** synchronizes the values of UI elements (views) with underlying data (often from a view model). When the data property changes or the events happen, for example, the view automatically reflects the update. The image below shows the interaction between View, Data Binding and ModelView
+1. **Data Binding** synchronizes the values of UI elements (views) with underlying data (often from a view model). When the data property changes or the events happen, for example, the view automatically reflects the update. The image below shows the interaction between View, Data Binding and ModelView
 
 <p align="center">
     <img src="part-2-mvvm-imgs/data-binding.png" />
