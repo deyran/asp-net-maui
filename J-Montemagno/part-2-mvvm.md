@@ -14,7 +14,7 @@
 
 3. **ViewModel** - It's like the code behind of View. Tells the page *what to display* without knowing where the data is comes from. It controls the flow of interaction, it's going to do two way back and forth updates of *what to display*. When things change, notify the View that things need to be updated
 
-4. **Model**
+4. **Model** - Business logic and Data handling. The Model encapsulates the application's business logic and manages data. Essentially, it's responsible for handling data persistence and manipulation.
 
 ### [Data Binding](https://youtu.be/DuNLR_NJv8U?t=3632)
 
