@@ -27,3 +27,18 @@
 2. **INotifyPropertyChanged** - The INotifyPropertyChanged interface is used to notify binding clients that a property value has changed. When a property in the ViewModel changes, it raises the **PropertyChanged** event causing the View reflects that change.
 
 ## [Let's do it!](https://youtu.be/DuNLR_NJv8U?t=4139)
+
+1. In the **ViewModel/BaseViewModel** file, open and edit it as shown in the code below
+
+```
+namespace MonkeyFinder.ViewModel;
+
+public class BaseViewModel : INotifyPropertyChanged
+{
+    public event PropertyChangedEventHandler PropertyChanged;
+}
+```
+
+2. A
+3. A
+4. A
