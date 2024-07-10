@@ -28,7 +28,7 @@
 
 ## [Let's do it!](https://youtu.be/DuNLR_NJv8U?t=4139)
 
-1. In the **ViewModel/BaseViewModel** file, open and edit it as shown in the code below
+1. [01:12:04](https://youtu.be/DuNLR_NJv8U?t=4324) In the **ViewModel/BaseViewModel** file, implement the INotifyPropertyChanged interface as shown in the code below:
 
 ```
 namespace MonkeyFinder.ViewModel;
