@@ -46,6 +46,19 @@ namespace MonkeyFinder.ViewModel;
 
 public class BaseViewModel : INotifyPropertyChanged
 {
+    bool isBusy;
+    string title;
+
+    public bool IsBusy
+    {
+        get => isBusy;
+        set
+        {
+            if (isBusy == value) return;
+            OnPropertyChanged("IsBusy");
+        }
+    }
+
     public event PropertyChangedEventHandler PropertyChanged;
 
     public void OnPropertyChanged(string name)
@@ -53,6 +66,10 @@ public class BaseViewModel : INotifyPropertyChanged
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }
 }
+
 ```
+
+https://youtu.be/DuNLR_NJv8U?t=4585
+
 
 4. A
