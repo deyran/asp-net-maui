@@ -39,6 +39,20 @@ public class BaseViewModel : INotifyPropertyChanged
 }
 ```
 
-2. https://youtu.be/DuNLR_NJv8U?t=4255
+2. Now create a method that any view could call and raise this event:
+
+```
+namespace MonkeyFinder.ViewModel;
+
+public class BaseViewModel : INotifyPropertyChanged
+{
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void OnPropertyChanged(string name)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+    }
+}
+```
 
 4. A
