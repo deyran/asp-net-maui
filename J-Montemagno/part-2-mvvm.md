@@ -69,7 +69,7 @@ public class BaseViewModel : INotifyPropertyChanged
 
 ```
 
-https://youtu.be/DuNLR_NJv8U?t=4585
+https://youtu.be/DuNLR_NJv8U?t=5505
 
 
 4. A
