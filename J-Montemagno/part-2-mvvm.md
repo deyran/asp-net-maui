@@ -31,8 +31,8 @@
 1. [01:12:04](https://youtu.be/DuNLR_NJv8U?t=4324) INotifyPropertyChanged
 2. [01:22:54](https://youtu.be/DuNLR_NJv8U?t=4947) CommunityToolkit.Mvvm
 
-* **CommunityToolkit.Mvvm** is a library that simplifies the implementation of the MVVM pattern in .Net applications. It includes an abstract base class called **ObservableObject**.
+    * **CommunityToolkit.Mvvm** is a library that simplifies the implementation of the MVVM pattern in .Net applications. It includes an abstract base class called **ObservableObject**.
 
-* When a ViewModel class inherits from the ObservableObject class, it automatically handles property change notifications without requiring manual implementation of the interface.
+    * When a ViewModel class inherits from the ObservableObject class, it automatically handles property change notifications without requiring manual implementation of the interface.
 
 3. AAA
