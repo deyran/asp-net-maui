@@ -28,48 +28,5 @@
 
 ## [Let's do it!](https://youtu.be/DuNLR_NJv8U?t=4139)
 
-1. [01:12:04](https://youtu.be/DuNLR_NJv8U?t=4324) In the **ViewModel/BaseViewModel** file, implement the INotifyPropertyChanged interface as shown in the code below:
-
-```
-namespace MonkeyFinder.ViewModel;
-
-public class BaseViewModel : INotifyPropertyChanged
-{
-    public event PropertyChangedEventHandler PropertyChanged;
-}
-```
-
-2. Now create a method that any view could call and raise this event:
-
-```
-namespace MonkeyFinder.ViewModel;
-
-public class BaseViewModel : INotifyPropertyChanged
-{
-    bool isBusy;
-    string title;
-
-    public bool IsBusy
-    {
-        get => isBusy;
-        set
-        {
-            if (isBusy == value) return;
-            OnPropertyChanged("IsBusy");
-        }
-    }
-
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    public void OnPropertyChanged(string name)
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-    }
-}
-
-```
-
-https://youtu.be/DuNLR_NJv8U?t=5505
-
-
-4. A
+1. [01:12:04](https://youtu.be/DuNLR_NJv8U?t=4324) INotifyPropertyChanged
+2. A
