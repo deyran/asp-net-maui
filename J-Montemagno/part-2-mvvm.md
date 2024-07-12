@@ -29,4 +29,4 @@
 ## [Let's do it!](https://youtu.be/DuNLR_NJv8U?t=4139)
 
 1. [01:12:04](https://youtu.be/DuNLR_NJv8U?t=4324) INotifyPropertyChanged
-2. A
+2. [01:22:54](https://youtu.be/DuNLR_NJv8U?t=4947) CommunityToolkit.Mvvm
