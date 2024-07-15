@@ -35,4 +35,4 @@
 
     * When a ViewModel class inherits from the ObservableObject class, it automatically handles property change notifications without requiring manual implementation of the interface.
 
-3. AAA
+3. [01:27:14](https://youtu.be/DuNLR_NJv8U?t=5234) ObservableObject
