@@ -28,11 +28,17 @@
 
 ## [Let's do it!](https://youtu.be/DuNLR_NJv8U?t=4139)
 
-1. [01:12:04](https://youtu.be/DuNLR_NJv8U?t=4324) INotifyPropertyChanged
-2. [01:22:54](https://youtu.be/DuNLR_NJv8U?t=4947) CommunityToolkit.Mvvm
+### [01:12:04](https://youtu.be/DuNLR_NJv8U?t=4324) INotifyPropertyChanged
+### [01:22:54](https://youtu.be/DuNLR_NJv8U?t=4947) CommunityToolkit.Mvvm
 
-    * **CommunityToolkit.Mvvm** is a library that simplifies the implementation of the MVVM pattern in .Net applications. It includes an abstract base class called **ObservableObject**.
+* **CommunityToolkit.Mvvm** is a library that simplifies the implementation of the MVVM pattern in .Net applications. It includes an abstract base class called **ObservableObject**.
 
-    * When a ViewModel class inherits from the ObservableObject class, it automatically handles property change notifications without requiring manual implementation of the interface.
+* When a ViewModel class inherits from the ObservableObject class, it automatically handles property change notifications without requiring manual implementation of the interface.
 
-3. [01:27:14](https://youtu.be/DuNLR_NJv8U?t=5234) ObservableObject
+### [01:27:14](https://youtu.be/DuNLR_NJv8U?t=5234) ObservableObject
+### [01:32:14](https://youtu.be/DuNLR_NJv8U?t=5533) Services - The purpose of Services in the MVVM pattern is as follows:
+   
+1. **Dependency injection**: Services facilitates dependency injection, maintaining separation between Services and the ViewModel.
+2. **ViewModel Responsibilities**: The ViewModel should focus on the business view, while Services handle tasks related to APIs or local persistence.
+
+### AAAA
