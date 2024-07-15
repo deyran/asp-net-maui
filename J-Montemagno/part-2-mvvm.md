@@ -45,4 +45,4 @@
 3. **Implementation**: In the Services class, methods are implemented that the application will need.
 
 ### [01:40:29](https://youtu.be/DuNLR_NJv8U?t=6029) MonkeysViewModel
-### [01:49:18](https://youtu.be/DuNLR_NJv8U?t=6558) Command
+### [01:49:18](https://youtu.be/DuNLR_NJv8U?t=6558) Command and ICommand
