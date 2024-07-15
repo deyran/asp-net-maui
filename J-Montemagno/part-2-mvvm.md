@@ -36,9 +36,12 @@
 * When a ViewModel class inherits from the ObservableObject class, it automatically handles property change notifications without requiring manual implementation of the interface.
 
 ### [01:27:14](https://youtu.be/DuNLR_NJv8U?t=5234) ObservableObject
-### [01:32:14](https://youtu.be/DuNLR_NJv8U?t=5533) Services - The purpose of Services in the MVVM pattern is as follows:
+### [01:32:14](https://youtu.be/DuNLR_NJv8U?t=5533) Services 
+
+#### The purpose of Services in the MVVM pattern is as follows:
    
 1. **Dependency injection**: Services facilitates dependency injection, maintaining separation between Services and the ViewModel.
 2. **ViewModel Responsibilities**: The ViewModel should focus on the business view, while Services handle tasks related to APIs or local persistence.
+3. **Implementation**: In the Services class, methods are implemented that the application will need.
 
 ### AAAA
