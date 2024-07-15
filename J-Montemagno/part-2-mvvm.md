@@ -44,4 +44,4 @@
 2. **ViewModel Responsibilities**: The ViewModel should focus on the business view, while Services handle tasks related to APIs or local persistence.
 3. **Implementation**: In the Services class, methods are implemented that the application will need.
 
-### AAAA
+### [01:40:29](https://youtu.be/DuNLR_NJv8U?t=6029) MonkeysViewModel
