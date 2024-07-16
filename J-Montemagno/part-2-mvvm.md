@@ -47,4 +47,4 @@
 ### [01:40:29](https://youtu.be/DuNLR_NJv8U?t=6029) MonkeysViewModel
 ### [01:49:18](https://youtu.be/DuNLR_NJv8U?t=6558) Command and ICommand
 ### [01:53:23](https://youtu.be/DuNLR_NJv8U?t=6803) Register dependency services
-### [01:57:08](https://youtu.be/DuNLR_NJv8U?t=7028) Build an use interface
+### [01:57:08](https://youtu.be/DuNLR_NJv8U?t=7028) Build an user interface
