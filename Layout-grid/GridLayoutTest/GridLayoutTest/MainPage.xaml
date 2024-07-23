@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridLayoutTest.MainPage">
+
+    <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="Auto, *">
+
+        <Label Grid.Row="0"
+               Grid.ColumnSpan="2"
+               Text="User Information"
+               FontSize="Title" />
+
+        <Label Grid.Row="1"
+               Grid.ColumnSpan="2"
+               Text="User Information"
+               FontSize="Body" />
+
+    </Grid>
+    
+</ContentPage>
