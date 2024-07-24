@@ -48,4 +48,4 @@
 ### [01:49:18](https://youtu.be/DuNLR_NJv8U?t=6558) Command and ICommand
 ### [01:53:23](https://youtu.be/DuNLR_NJv8U?t=6803) Register dependency services
 ### [01:57:08](https://youtu.be/DuNLR_NJv8U?t=7028) Starting to build the user interface
-### [01:59:46](https://youtu.be/DuNLR_NJv8U?t=7186) Grid
+### [01:59:46](https://youtu.be/DuNLR_NJv8U?t=7186) First version of the Monkey Finders app
