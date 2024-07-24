@@ -28,7 +28,9 @@
 
 Creating a list of monkeys and populating that inside of our user interface Instead of hard coding that data
 
-### [INotifyPropertyChanged](https://youtu.be/DuNLR_NJv8U?t=4324)
+1. AAAA
+
+
 ### [CommunityToolkit.Mvvm](https://youtu.be/DuNLR_NJv8U?t=4947)
 
 * **CommunityToolkit.Mvvm** is a library that simplifies the implementation of the MVVM pattern in .Net applications. It includes an abstract base class called **ObservableObject**.
