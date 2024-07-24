@@ -1,6 +1,6 @@
 # Part 2 - MVVM
 
-## [View-ViewModel-Model](https://youtu.be/DuNLR_NJv8U?t=3454) - The basics
+## [View-ViewModel-Model](https://youtu.be/DuNLR_NJv8U?t=3454)
 
 1. Is an architecture pattern used to **separation of concerns** of the Code. The image below shows the interaction between View, ViewModel and Model.
 
@@ -14,7 +14,7 @@
 
 4. **Model** - Business logic and Data handling. The Model encapsulates the application's business logic and manages data. Essentially, it's responsible for handling data persistence and manipulation.
 
-## [Data Binding](https://youtu.be/DuNLR_NJv8U?t=3632) Data Binding
+## [Data Binding](https://youtu.be/DuNLR_NJv8U?t=3632)
 
 1. **Data Binding** synchronizes the values of UI elements (views) with underlying data (often from a view model). When the data property changes or the events happen, for example, the view automatically reflects the update. The image below shows the interaction between View, Data Binding and ModelView
 
@@ -26,15 +26,16 @@
 
 ## [Let's do it!](https://youtu.be/DuNLR_NJv8U?t=4139)
 
-### [01:12:04](https://youtu.be/DuNLR_NJv8U?t=4324) INotifyPropertyChanged
-### [01:22:54](https://youtu.be/DuNLR_NJv8U?t=4947) CommunityToolkit.Mvvm
+### [INotifyPropertyChanged](https://youtu.be/DuNLR_NJv8U?t=4324)
+### [CommunityToolkit.Mvvm](https://youtu.be/DuNLR_NJv8U?t=4947)
 
 * **CommunityToolkit.Mvvm** is a library that simplifies the implementation of the MVVM pattern in .Net applications. It includes an abstract base class called **ObservableObject**.
 
 * When a ViewModel class inherits from the ObservableObject class, it automatically handles property change notifications without requiring manual implementation of the interface.
 
-### [01:27:14](https://youtu.be/DuNLR_NJv8U?t=5234) ObservableObject
-### [01:32:14](https://youtu.be/DuNLR_NJv8U?t=5533) Services 
+### [ObservableObject](https://youtu.be/DuNLR_NJv8U?t=5234)
+
+### [Services](https://youtu.be/DuNLR_NJv8U?t=5533)
 
 #### The purpose of Services in the MVVM pattern is as follows:
    
@@ -42,11 +43,11 @@
 2. **ViewModel Responsibilities**: The ViewModel should focus on the business view, while Services handle tasks related to APIs or local persistence.
 3. **Implementation**: In the Services class, methods are implemented that the application will need.
 
-### [01:40:29](https://youtu.be/DuNLR_NJv8U?t=6029) MonkeysViewModel
-### [01:49:18](https://youtu.be/DuNLR_NJv8U?t=6558) Command and ICommand
-### [01:53:23](https://youtu.be/DuNLR_NJv8U?t=6803) Register dependency services
-### [01:57:08](https://youtu.be/DuNLR_NJv8U?t=7028) Starting to build the user interface
-### [01:59:46](https://youtu.be/DuNLR_NJv8U?t=7186) First version of the Monkey Finders app
+### [MonkeysViewModel](https://youtu.be/DuNLR_NJv8U?t=6029)
+### [Command and ICommand](https://youtu.be/DuNLR_NJv8U?t=6558)
+### [Register dependency services](https://youtu.be/DuNLR_NJv8U?t=6803)
+### [Starting to build the user interface](https://youtu.be/DuNLR_NJv8U?t=7028)
+### [First version of the Monkey Finders app](https://youtu.be/DuNLR_NJv8U?t=7186)
 
 
 # Next part -> https://youtu.be/DuNLR_NJv8U?t=8173
