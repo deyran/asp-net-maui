@@ -1,8 +1,6 @@
 # Part 2 - MVVM
 
-## The basics
-
-### [View-ViewModel-Model](https://youtu.be/DuNLR_NJv8U?t=3454)
+## [View-ViewModel-Model](https://youtu.be/DuNLR_NJv8U?t=3454) - The basics
 
 1. Is an architecture pattern used to **separation of concerns** of the Code. The image below shows the interaction between View, ViewModel and Model.
 
@@ -16,7 +14,7 @@
 
 4. **Model** - Business logic and Data handling. The Model encapsulates the application's business logic and manages data. Essentially, it's responsible for handling data persistence and manipulation.
 
-### [Data Binding](https://youtu.be/DuNLR_NJv8U?t=3632)
+## [Data Binding](https://youtu.be/DuNLR_NJv8U?t=3632) Data Binding
 
 1. **Data Binding** synchronizes the values of UI elements (views) with underlying data (often from a view model). When the data property changes or the events happen, for example, the view automatically reflects the update. The image below shows the interaction between View, Data Binding and ModelView
 
@@ -49,3 +47,6 @@
 ### [01:53:23](https://youtu.be/DuNLR_NJv8U?t=6803) Register dependency services
 ### [01:57:08](https://youtu.be/DuNLR_NJv8U?t=7028) Starting to build the user interface
 ### [01:59:46](https://youtu.be/DuNLR_NJv8U?t=7186) First version of the Monkey Finders app
+
+
+# Next part -> https://youtu.be/DuNLR_NJv8U?t=8173
