@@ -56,8 +56,12 @@ public partial class BaseViewModel : ObservableObject
 }
 ```
 
-3. A
-4. A
+3. Implements the [MonkeyService](https://youtu.be/DuNLR_NJv8U?t=5541) class as shown in the code below:
+
+```
+```
+
+4. Implements the [MonkeysViewModel]() class as shown in the code below:
 5. A
 6. A
 
