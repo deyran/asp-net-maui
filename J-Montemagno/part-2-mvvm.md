@@ -56,9 +56,10 @@ public partial class BaseViewModel : ObservableObject
 }
 ```
 
-3. AAAA
-
-### [ObservableObject](https://youtu.be/DuNLR_NJv8U?t=5234)
+3. A
+4. A
+5. A
+6. A
 
 ### [Services](https://youtu.be/DuNLR_NJv8U?t=5533)
 
