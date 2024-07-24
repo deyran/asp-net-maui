@@ -24,7 +24,9 @@
 
 2. **INotifyPropertyChanged** - The INotifyPropertyChanged interface is used to notify binding clients that a property value has changed. When a property in the ViewModel changes, it raises the **PropertyChanged** event causing the View reflects that change.
 
-## [Let's do it!](https://youtu.be/DuNLR_NJv8U?t=4139)
+## Let's do it!
+
+Creating a list of monkeys and populating that inside of our user interface Instead of hard coding that data
 
 ### [INotifyPropertyChanged](https://youtu.be/DuNLR_NJv8U?t=4324)
 ### [CommunityToolkit.Mvvm](https://youtu.be/DuNLR_NJv8U?t=4947)
