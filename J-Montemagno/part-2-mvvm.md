@@ -170,8 +170,13 @@ public static class MauiProgram
 
 ```
 
-6. Starting to build the user interface
-7. First version of the Monkey Finders app
+6. Linking the page with the ViewModel. Open the **MainPage** class and edit it as shown in the code below:
+   
+```
+```
+   
+7. Starting to build the user interface
+8. First version of the Monkey Finders app
 
 
 # Next part -> https://youtu.be/DuNLR_NJv8U?t=8173
