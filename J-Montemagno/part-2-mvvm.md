@@ -92,7 +92,7 @@ public class MonkeyService
 }
 ```
 
-4. Implements the [MonkeysViewModel]() class as shown in the code below:
+4. Implements the [MonkeysViewModel](https://youtu.be/DuNLR_NJv8U?t=6029) class as shown in the code below:
    
 ```
 ```
