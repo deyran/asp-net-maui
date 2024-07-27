@@ -186,6 +186,25 @@ public partial class MainPage : ContentPage
 ```
    
 7. [User interface](https://youtu.be/DuNLR_NJv8U?t=7027)
+
+1. Bind the View to the ViewModel, set the page data type, and set the page title. Open the MainPage.xmal, in the ContentPage add the code below
+
+```
+<ContentPage
+    ...
+
+    xmlns:viewmodel="clr-namespace:MonkeyFinder.ViewModel"
+    x:DataType="viewmodel:MonkeysViewModel"
+    Title="{Binding Title}"
+    
+    ...>
+
+```
+
+2. A
+3. A
+
+
 8. First version of the Monkey Finders app
 
 
