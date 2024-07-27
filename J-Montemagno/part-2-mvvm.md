@@ -92,17 +92,15 @@ public class MonkeyService
 }
 ```
 
-4. Implements the [MonkeysViewModel]() class as shown in the code below:
-5. A
-6. A
-
-### [Services](https://youtu.be/DuNLR_NJv8U?t=5533)
-
 #### The purpose of Services in the MVVM pattern is as follows:
    
 1. **Dependency injection**: Services facilitates dependency injection, maintaining separation between Services and the ViewModel.
 2. **ViewModel Responsibilities**: The ViewModel should focus on the business view, while Services handle tasks related to APIs or local persistence.
 3. **Implementation**: In the Services class, methods are implemented that the application will need.
+
+4. Implements the [MonkeysViewModel]() class as shown in the code below:
+5. A
+6. A
 
 ### [MonkeysViewModel](https://youtu.be/DuNLR_NJv8U?t=6029)
 ### [Command and ICommand](https://youtu.be/DuNLR_NJv8U?t=6558)
