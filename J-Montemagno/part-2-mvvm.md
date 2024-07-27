@@ -158,7 +158,7 @@ public static class MauiProgram
 	public static MauiApp CreateMauiApp()
 	{
         ... 
-        
+
         builder.Services.AddSingleton<MonkeyService>();
         builder.Services.AddSingleton<MonkeysViewModel>();
 
@@ -170,12 +170,8 @@ public static class MauiProgram
 
 ```
 
-6. A
-
-
-### [Register dependency services](https://youtu.be/DuNLR_NJv8U?t=6803)
-### [Starting to build the user interface](https://youtu.be/DuNLR_NJv8U?t=7028)
-### [First version of the Monkey Finders app](https://youtu.be/DuNLR_NJv8U?t=7186)
+6. Starting to build the user interface
+7. First version of the Monkey Finders app
 
 
 # Next part -> https://youtu.be/DuNLR_NJv8U?t=8173
