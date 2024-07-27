@@ -74,7 +74,7 @@ public class MonkeyService
 
     List<Monkey> monkeyList = new();
 
-    public async Task<List<Monkey>> GetMonkey()
+    public async Task<List<Monkey>> GetMonkeys()
     {
         if (monkeyList?.Count > 0)
             return monkeyList;
@@ -95,6 +95,53 @@ public class MonkeyService
 4. Implements the [MonkeysViewModel](https://youtu.be/DuNLR_NJv8U?t=6029) class as shown in the code below:
    
 ```
+using MonkeyFinder.Services;
+
+namespace MonkeyFinder.ViewModel;
+
+public partial class MonkeysViewModel : BaseViewModel
+{
+    MonkeyService monkeyService;
+    public ObservableCollection<Monkey> Monkeys { get; } = new();
+    public MonkeysViewModel(MonkeyService monkeyService)
+    {
+        Title = "Monkey Finder";
+        this.monkeyService = monkeyService;
+    }
+
+    [RelayCommand]
+    async Task GetMonkeysAsync()
+    {
+        if (IsBusy)
+            return;
+
+        try
+        {
+            IsBusy = true;
+            var monkeys = await monkeyService.GetMonkeys();
+
+            if (Monkeys.Count != 0)
+                Monkeys.Clear();
+
+            foreach (var monkey in monkeys)
+                Monkeys.Add(monkey);
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine(ex);
+
+            await Shell.Current.DisplayAlert(
+                "Error!", 
+                $"Unable to get monkeys: {ex.Message}", 
+                "OK"
+            );
+        }
+        finally
+        {
+            IsBusy = false;
+        }
+    }
+}
 ```
 
 5. A
