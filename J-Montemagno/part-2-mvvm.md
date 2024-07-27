@@ -170,9 +170,19 @@ public static class MauiProgram
 
 ```
 
-6. Linking the page with the ViewModel. Open the **MainPage** class and edit it as shown in the code below:
+6. [Linking](https://youtu.be/DuNLR_NJv8U?t=6943) the page with the ViewModel. Open the **MainPage** class and edit it as shown in the code below:
    
 ```
+namespace MonkeyFinder.View;
+
+public partial class MainPage : ContentPage
+{
+	public MainPage(MonkeysViewModel viewModel)
+	{
+		InitializeComponent();
+		BindingContext = viewModel;
+    }
+}
 ```
    
 7. Starting to build the user interface
