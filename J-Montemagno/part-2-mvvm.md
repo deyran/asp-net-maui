@@ -185,7 +185,7 @@ public partial class MainPage : ContentPage
 }
 ```
    
-7. Starting to build the user interface
+7. [User interface](https://youtu.be/DuNLR_NJv8U?t=7027)
 8. First version of the Monkey Finders app
 
 
