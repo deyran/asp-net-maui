@@ -144,7 +144,7 @@ public partial class MonkeysViewModel : BaseViewModel
 }
 ```
 
-5. A
+5. [Linking together](https://youtu.be/DuNLR_NJv8U?t=6812) of the MonkeysViewModel, the MonkeyService and the page itself
 6. A
 
 ### [MonkeysViewModel](https://youtu.be/DuNLR_NJv8U?t=6029)
