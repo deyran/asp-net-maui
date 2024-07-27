@@ -144,11 +144,14 @@ public partial class MonkeysViewModel : BaseViewModel
 }
 ```
 
-5. [Linking together](https://youtu.be/DuNLR_NJv8U?t=6812) of the MonkeysViewModel, the MonkeyService and the page itself
+5. [Register dependency](https://youtu.be/DuNLR_NJv8U?t=6812). Open and edit the MauiProgram class as shown in the code below:
+
+```
+```
+
 6. A
 
-### [MonkeysViewModel](https://youtu.be/DuNLR_NJv8U?t=6029)
-### [Command and ICommand](https://youtu.be/DuNLR_NJv8U?t=6558)
+
 ### [Register dependency services](https://youtu.be/DuNLR_NJv8U?t=6803)
 ### [Starting to build the user interface](https://youtu.be/DuNLR_NJv8U?t=7028)
 ### [First version of the Monkey Finders app](https://youtu.be/DuNLR_NJv8U?t=7186)
