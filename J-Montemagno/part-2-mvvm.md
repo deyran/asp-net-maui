@@ -147,6 +147,27 @@ public partial class MonkeysViewModel : BaseViewModel
 5. [Register dependency](https://youtu.be/DuNLR_NJv8U?t=6812). Open and edit the MauiProgram class as shown in the code below:
 
 ```
+using Microsoft.Extensions.Logging;
+using MonkeyFinder.Services;
+using MonkeyFinder.View;
+
+namespace MonkeyFinder;
+
+public static class MauiProgram
+{
+	public static MauiApp CreateMauiApp()
+	{
+        ... 
+        
+        builder.Services.AddSingleton<MonkeyService>();
+        builder.Services.AddSingleton<MonkeysViewModel>();
+
+        builder.Services.AddSingleton<MainPage>();
+
+		return builder.Build();
+	}
+}
+
 ```
 
 6. A
