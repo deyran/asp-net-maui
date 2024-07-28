@@ -201,6 +201,58 @@ public partial class MainPage : ContentPage
 
 8. [Grid layout and CollectionView](https://youtu.be/DuNLR_NJv8U?t=7326)
 
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MonkeyFinder.View.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodel="clr-namespace:MonkeyFinder.ViewModel"
+    x:DataType="viewmodel:MonkeysViewModel"
+    Title="{Binding Title}"
+    xmlns:model="clr-namespace:MonkeyFinder.Model">
 
+    <Grid   ColumnDefinitions="*,*"
+            ColumnSpacing="5"
+            RowDefinitions="*, Auto"
+            RowSpacing="0">
+
+        <CollectionView BackgroundColor="Transparent"
+	                    Grid.ColumnSpan="2"
+                        ItemsSource="{Binding Monkeys}"
+                        SelectionMode="None">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Monkey">
+                    <Grid Padding="10">
+                        <Frame HeightRequest="125">
+                            <Label Text="{Binding Name}" />
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            
+        </CollectionView>
+
+        <Button Text="Get Monkeys"
+                Command="{Binding GetMonkeysCommand}"
+                IsEnabled="{Binding IsNotBusy}"
+	            Grid.Row="1"
+	            Margin="8" />
+
+        <ActivityIndicator  IsVisible="{Binding IsBusy}"
+                            IsRunning="{Binding IsBusy}"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.RowSpan="2"
+                            Grid.ColumnSpan="2" />
+
+    </Grid>
+
+</ContentPage>
+```
+
+
+https://youtu.be/DuNLR_NJv8U?t=7780
 
 # Next part -> https://youtu.be/DuNLR_NJv8U?t=8173
