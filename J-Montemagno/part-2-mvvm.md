@@ -272,4 +272,4 @@ public partial class MainPage : ContentPage
 </ContentPage>
 ```
 
-# Next part -> https://youtu.be/DuNLR_NJv8U?t=8173
+# Next part -> https://youtu.be/DuNLR_NJv8U?t=8718
