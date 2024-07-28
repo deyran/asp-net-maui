@@ -199,7 +199,7 @@ public partial class MainPage : ContentPage
 
 ```
 
-8. [Grid layout and CollectionView](https://youtu.be/DuNLR_NJv8U?t=7326)
+8. [List of monkeys](https://youtu.be/DuNLR_NJv8U?t=7326)
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -225,8 +225,27 @@ public partial class MainPage : ContentPage
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:Monkey">
                     <Grid Padding="10">
-                        <Frame HeightRequest="125">
-                            <Label Text="{Binding Name}" />
+                        <Frame HeightRequest="125"
+                               Padding="0"
+                               Style="{StaticResource CardView}">
+                            <Grid Padding="0"
+                                  ColumnDefinitions="125,*">
+                                
+                                <Image Aspect="AspectFill"
+                                   Source="{Binding Image}"
+                                   WidthRequest="125"
+                                   HeightRequest="125" />
+
+                                <VerticalStackLayout Grid.Column="1"
+                                                     Padding="10"
+                                                     VerticalOptions="Center">
+                                    <Label Text="{Binding Name}" 
+                                           Style="{StaticResource LargeLabel}"/>
+                                    <Label Text="{Binding Location}" 
+                                           Style="{StaticResource MediumLabel}"/>
+                                </VerticalStackLayout>
+                                
+                            </Grid>
                         </Frame>
                     </Grid>
                 </DataTemplate>
@@ -235,6 +254,7 @@ public partial class MainPage : ContentPage
         </CollectionView>
 
         <Button Text="Get Monkeys"
+                Style="{StaticResource ButtonOutline}"
                 Command="{Binding GetMonkeysCommand}"
                 IsEnabled="{Binding IsNotBusy}"
 	            Grid.Row="1"
@@ -251,8 +271,5 @@ public partial class MainPage : ContentPage
 
 </ContentPage>
 ```
-
-
-https://youtu.be/DuNLR_NJv8U?t=7780
 
 # Next part -> https://youtu.be/DuNLR_NJv8U?t=8173
