@@ -38,4 +38,20 @@ async Task GoToDetailsAsync(Monkey monkey)
 </ContentPage>
 ```
 
-3. AAAAAAAA
+3. Open and edit **DetailsPage.xaml.cs** as shown in the code below:
+
+```
+namespace MonkeyFinder;
+
+public partial class DetailsPage : ContentPage
+{
+	public DetailsPage(MonkeyDetailsViewModel viewModel)
+	{
+		InitializeComponent();
+		BindingContext = viewModel;
+	}
+}
+```
+
+4. A
+5. AAAAAA
