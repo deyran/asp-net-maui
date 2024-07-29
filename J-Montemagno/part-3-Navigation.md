@@ -31,7 +31,7 @@ async Task GoToDetailsAsync(Monkey monkey)
 
                             <Frame.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding .}"
-                                                      CommandParameter="{Binding Source={RelativeSource AncestorType={x:Type viewmodel: viewmodel:MonkeysViewModel}}, Path=GoToDetailsCommand}"/>
+                                                      CommandParameter="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MonkeysViewModel}}, Path=GoToDetailsCommand}"/>
                             </Frame.GestureRecognizers>
         ...                            
     </Grid>
