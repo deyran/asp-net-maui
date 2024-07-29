@@ -53,5 +53,21 @@ public partial class DetailsPage : ContentPage
 }
 ```
 
-4. A
+4. Open and edit **MonkeyDetailsViewModel.cs** as shown in the code below:
+
+```
+namespace MonkeyFinder.ViewModel;
+
+[QueryProperty("Monkey", "Monkey")]
+public partial class MonkeyDetailsViewModel : BaseViewModel
+{
+    public MonkeyDetailsViewModel()
+    {        
+    }
+
+    [ObservableProperty]
+    Monkey monkey;
+}
+```
+
 5. AAAAAA
