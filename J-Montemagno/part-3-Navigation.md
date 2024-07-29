@@ -69,5 +69,5 @@ public partial class MonkeyDetailsViewModel : BaseViewModel
     Monkey monkey;
 }
 ```
-
+https://youtu.be/DuNLR_NJv8U?t=9495
 5. AAAAAA
