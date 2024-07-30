@@ -86,4 +86,18 @@ public partial class AppShell : Shell
 }
 ```
 
-6. AAAAA
+6. Open the MauiProgram.cs to add **build.Services** as shown in the code below:
+   
+```
+...
+builder.Services.AddSingleton<MonkeyService>();
+
+builder.Services.AddSingleton<MonkeysViewModel>();
+builder.Services.AddTransient<MonkeyDetailsViewModel>();
+
+builder.Services.AddSingleton<MainPage>();
+builder.Services.AddTransient<DetailsPage>();
+...
+```
+   
+7. AAAA
