@@ -70,7 +70,7 @@ public partial class MonkeyDetailsViewModel : BaseViewModel
 }
 ```
 
-5. Now it's time to register the route.
+5. Now it's time to register the route in the **AppShell.xaml.cs** file.
    
 ```
 namespace MonkeyFinder;
