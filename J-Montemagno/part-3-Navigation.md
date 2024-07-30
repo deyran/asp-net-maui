@@ -69,5 +69,21 @@ public partial class MonkeyDetailsViewModel : BaseViewModel
     Monkey monkey;
 }
 ```
-https://youtu.be/DuNLR_NJv8U?t=9495
-5. AAAAAA
+
+5. Now it's time to register the route.
+   
+```
+namespace MonkeyFinder;
+
+public partial class AppShell : Shell
+{
+	public AppShell()
+	{
+		InitializeComponent();
+
+        Routing.RegisterRoute(nameof(DetailsPage), typeof(DetailsPage));
+    }
+}
+```
+
+6. AAAAA
