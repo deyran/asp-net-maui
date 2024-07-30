@@ -30,8 +30,9 @@ async Task GoToDetailsAsync(Monkey monkey)
                         <Frame ...>
 
                             <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding .}"
-                                                      CommandParameter="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MonkeysViewModel}}, Path=GoToDetailsCommand}"/>
+                                <TapGestureRecognizer 
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MonkeysViewModel}}, Path=GoToDetailsCommand}"
+                                        CommandParameter="{Binding .}"/>
                             </Frame.GestureRecognizers>
         ...                            
     </Grid>
@@ -50,6 +51,11 @@ public partial class DetailsPage : ContentPage
 		InitializeComponent();
 		BindingContext = viewModel;
 	}
+
+    protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        base.OnNavigatedTo(args);
+    }
 }
 ```
 
