@@ -106,9 +106,9 @@ builder.Services.AddTransient<DetailsPage>();
 ...
 ```
    
-# Create DetailsPage.xaml UI
+# [Create DetailsPage.xaml UI](https://youtu.be/DuNLR_NJv8U?t=9868)
 
-1. Define DataType,view model namespace and title of the DetailsPage.xaml page
+## DetailsPage.xaml
    
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -126,4 +126,4 @@ builder.Services.AddTransient<DetailsPage>();
 </ContentPage>
 ```
 
-2. AAAAAAAAAAA
+https://youtu.be/DuNLR_NJv8U?t=10117
