@@ -38,7 +38,7 @@ async Task GoToDetailsAsync(Monkey monkey)
 </ContentPage>
 ```
 
-3. Open and edit **DetailsPage.xaml.cs** as shown in the code below:
+3. Passing the object to a specific page. Open and edit **DetailsPage.xaml.cs** as shown in the code below:
 
 ```
 namespace MonkeyFinder;
