@@ -109,6 +109,8 @@ builder.Services.AddTransient<DetailsPage>();
 # [Create DetailsPage.xaml UI](https://youtu.be/DuNLR_NJv8U?t=9868)
 
 ## DetailsPage.xaml
+  
+1. Defining our DataType by defining the view model namespace and also setting the title:
    
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -126,4 +128,48 @@ builder.Services.AddTransient<DetailsPage>();
 </ContentPage>
 ```
 
-https://youtu.be/DuNLR_NJv8U?t=10117
+2. `ScrollView`, `VerticalStackLayout` and `Grid` to layout
+   
+```
+<ScrollView>
+    <VerticalStackLayout>
+        <Grid ColumnDefinitions="*,Auto,*"
+                RowDefinitions="160, Auto">
+                ....
+        </Grid>
+    </VerticalStackLayout>
+</ScrollView>
+```
+
+3. Putting the monkey picture in the middle of the screen
+
+```
+... 
+
+<BoxView
+    BackgroundColor="{StaticResource Primary}"
+    Grid.ColumnSpan="3"
+    HeightRequest="160" 
+    HorizontalOptions="FillAndExpand"/>
+
+<Frame Grid.RowSpan="2"
+        Grid.Column="1"
+        HeightRequest="160"
+        WidthRequest="160"
+        CornerRadius="80"
+        HorizontalOptions="Center"
+        IsClippedToBounds="True"
+        Padding="0"
+        Margin="0,80,0,0">
+
+    <Image Aspect="AspectFill"
+            HeightRequest="160"
+            WidthRequest="160"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Source="{Binding Monkey.Image}" />
+</Frame>
+... 
+```
+
+4. AAAAAAAA
