@@ -144,32 +144,63 @@ builder.Services.AddTransient<DetailsPage>();
 3. Putting the monkey picture in the middle of the screen
 
 ```
-... 
+<ScrollView>
+    <VerticalStackLayout>
+        <Grid ColumnDefinitions="*,Auto,*"
+                RowDefinitions="160, Auto">
 
-<BoxView
-    BackgroundColor="{StaticResource Primary}"
-    Grid.ColumnSpan="3"
-    HeightRequest="160" 
-    HorizontalOptions="FillAndExpand"/>
+            <BoxView
+                BackgroundColor="{StaticResource Primary}"
+                Grid.ColumnSpan="3"
+                HeightRequest="160" 
+                HorizontalOptions="FillAndExpand"/>
 
-<Frame Grid.RowSpan="2"
-        Grid.Column="1"
-        HeightRequest="160"
-        WidthRequest="160"
-        CornerRadius="80"
-        HorizontalOptions="Center"
-        IsClippedToBounds="True"
-        Padding="0"
-        Margin="0,80,0,0">
+            <Frame Grid.RowSpan="2"
+                    Grid.Column="1"
+                    HeightRequest="160"
+                    WidthRequest="160"
+                    CornerRadius="80"
+                    HorizontalOptions="Center"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    Margin="0,80,0,0">
 
-    <Image Aspect="AspectFill"
-            HeightRequest="160"
-            WidthRequest="160"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            Source="{Binding Monkey.Image}" />
-</Frame>
-... 
+                <Image Aspect="AspectFill"
+                        HeightRequest="160"
+                        WidthRequest="160"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Source="{Binding Monkey.Image}" />
+            </Frame>
+            
+        </Grid>
+    </VerticalStackLayout>
+</ScrollView>
 ```
 
-4. AAAAAAAA
+4. Now we're gonna to put some information
+
+```
+...
+<ScrollView>
+    <VerticalStackLayout>
+        <Grid ColumnDefinitions="*,Auto,*"
+                RowDefinitions="160, Auto">
+        ...
+        </Grid>   
+
+        <VerticalStackLayout Padding="10" Spacing="10" HorizontalOptions="Center">
+            <Label Text="{Binding Monkey.Details}" 
+                    Style="{StaticResource MediumLabel}" />
+            <Label Text="{Binding Monkey.Location, StringFormat='Location: {0}'}" 
+                    Style="{StaticResource SmallLabel}"/>
+            <Label Text="{Binding Monkey.Population, StringFormat='Population: {0}'}" 
+                    Style="{StaticResource SmallLabel}"/>
+        </VerticalStackLayout>
+
+    </VerticalStackLayout>
+</ScrollView>
+...
+```
+
+5. AAAAAAA
