@@ -202,5 +202,3 @@ builder.Services.AddTransient<DetailsPage>();
 </ScrollView>
 ...
 ```
-
-5. AAAAAAA
