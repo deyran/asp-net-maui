@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MenuBarSnappet.MainPage">
+
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="File">
+            <MenuFlyoutSubItem Text="New">
+                <MenuFlyoutItem Text="Item 1"/>
+                <MenuFlyoutItem Text="Item 2"/>
+                <MenuFlyoutItem Text="Item 3"/>
+                <MenuFlyoutItem Text="Item 4"/>
+            </MenuFlyoutSubItem>
+
+            <MenuFlyoutItem Text="Open" />
+            <MenuFlyoutSeparator/>
+
+            <MenuFlyoutItem Text="Save" />
+            <MenuFlyoutItem Text="Save as" />
+
+            <MenuFlyoutSeparator/>
+            <MenuFlyoutItem Text="Exit"/>
+        </MenuBarItem>
+
+        <MenuBarItem Text="Edit"></MenuBarItem>
+        <MenuBarItem Text="Window"></MenuBarItem>
+    </ContentPage.MenuBarItems>
+
+</ContentPage>
