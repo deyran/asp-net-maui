@@ -1,4 +1,11 @@
-﻿using Microsoft.Extensions.Logging;
+# [Create Your First Application (2 of 18) | Building Apps with XAML and .NET MAUI](https://youtu.be/pTB4pZi4SVs?list=PLReL099Y5nRdDJre4TGscXx3EzV74O04X)
+
+## Full screen for windowns SO
+
+Open and edit the MauiProgram.cs file as shown in the code below:
+
+```
+using ...
 
 #if WINDOWS
 using Microsoft.Maui.LifecycleEvents;
@@ -10,16 +17,7 @@ namespace AdventureWorks
     {
         public static MauiApp CreateMauiApp()
         {
-            var builder = MauiApp.CreateBuilder();
-            builder
-                .UseMauiApp<App>()
-                .ConfigureFonts(fonts =>
-                {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                });
-
-
+            ...
 #if WINDOWS
       SetWindowOptions(builder);
       //SetWindowHandlers();
@@ -32,7 +30,6 @@ namespace AdventureWorks
 
             return builder.Build();
         }
-
 
 #if WINDOWS
     public static void SetWindowOptions(MauiAppBuilder builder)
@@ -61,3 +58,4 @@ namespace AdventureWorks
 
     }
 }
+```
