@@ -59,5 +59,3 @@ namespace AdventureWorks
     }
 }
 ```
-
-https://youtu.be/pTB4pZi4SVs?list=PLReL099Y5nRdDJre4TGscXx3EzV74O04X&t=1106
