@@ -4,8 +4,9 @@
              x:Class="AdventureWorks.MainPage"
              Title="Home">
 
-    <Grid RowDefinitions="Auto,Auto"
-          ColumnDefinitions="Auto,*">
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+          ColumnDefinitions="Auto,*"
+          Padding="7">
 
         <Label Grid.Row="0"
                Grid.ColumnSpan="2"
@@ -16,6 +17,28 @@
                Text="Use this screen to modify user information"
                FontSize="Body" />
 
+        <BoxView Grid.Row="2"
+                 Grid.ColumnSpan="2"
+                 Margin="0,0,0,20"
+                 HeightRequest="1"
+                 Color="Black" />
+        <Label Grid.Row="3"
+               Text="Login Id" />
+        <Entry Grid.Row="3"
+               Grid.Column="1"
+               Text="" />
+
+        <Label Grid.Row="4"
+               Text="First Name" />
+        <Entry Grid.Row="4"
+               Grid.Column="1"
+               Text="" />
+
+        <Label Grid.Row="5"
+               Text="Last Name" />
+        <Entry Grid.Row="5"
+               Grid.Column="1"
+               Text="" />
     </Grid>
 
 </ContentPage>
