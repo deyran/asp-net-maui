@@ -4,9 +4,18 @@
              x:Class="AdventureWorks.MainPage"
              Title="Home">
 
-    <Label Text="Adventure Works"
-           FontSize="Large"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+    <Grid RowDefinitions="Auto,Auto"
+          ColumnDefinitions="Auto,*">
+
+        <Label Grid.Row="0"
+               Grid.ColumnSpan="2"
+               Text="User Information"
+               FontSize="Title" />
+        <Label Grid.Row="1"
+               Grid.ColumnSpan="2"
+               Text="Use this screen to modify user information"
+               FontSize="Body" />
+
+    </Grid>
 
 </ContentPage>

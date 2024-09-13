@@ -5,7 +5,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AdventureWorks"
     Shell.FlyoutBehavior="Disabled"
-    Title="Rannyere is working here!">
+    Title="Rannyere is working here!"
+    BackgroundColor="Blue"
+    Shell.TitleColor="White">
 
     <ShellContent
         Title="Home"
