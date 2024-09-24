@@ -5,7 +5,9 @@
              Title="Home">
 
     <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto"
-          ColumnDefinitions="Auto, *" Padding="7">
+          ColumnDefinitions="Auto, *" Padding="7"
+          ColumnSpacing="10"
+          RowSpacing="10">
 
         <Label Grid.Row="0"
                Grid.ColumnSpan="2"
@@ -21,7 +23,7 @@
                  Margin="0, 0, 0, 10"
                  HeightRequest="1"
                  Color="Black" />
-        
+       
         
         <Label Grid.Row="3" Text="Login Id" 
                VerticalOptions="End" HorizontalOptions="End" />
