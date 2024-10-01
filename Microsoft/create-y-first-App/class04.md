@@ -1,6 +1,6 @@
 # [Use Stacks and Flex Layouts (4 of 18) | Building Apps with XAML and .NET MAUI](https://youtu.be/VJ2at_4ZiGE?si=H1QEOlaxLdPOT-lj)
 
-1. Add new row, HorizontalStackLayout and Buttons control
+1. In the MainPage.xaml file add new row, HorizontalStackLayout and Buttons control
    
 ```
 <Grid RowDefinitions="Auto, ..." ...>
