@@ -3,27 +3,50 @@
 1. In the MainPage.xaml file add new row, HorizontalStackLayout and Buttons control
    
 ```
-<Grid RowDefinitions="Auto, ..." ...>
+<Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" ...>
     
     ...
-    
+
     <Label Grid.Row="3" Text="Login Id" 
             VerticalOptions="Center" HorizontalOptions="End" />
     <VerticalStackLayout Grid.Row="3" Grid.Column="1">
-        <Entry Text="" />
+        <Entry Text="" 
+                Placeholder="Please use a combination of letters and numbers." />
         <Label FontSize="Micro" 
                 Text="Please use a combination of letters and numbers." />
     </VerticalStackLayout>
 
     ...
 
-    <HorizontalStackLayout Grid.Row="7"
+    <Label Grid.Row="7"
+            Text="Is Enrolled?" />
+    <FlexLayout Grid.Row="7"
+                Grid.Column="1"
+                Wrap="Wrap"
+                Direction="Column">
+        <HorizontalStackLayout Spacing="5">
+            <Label Text="401k?" />
+            <CheckBox IsChecked="True" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="5">
+            <Label Text="Flex Time?" />
+            <CheckBox />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="5">
+            <Label Text="Health Care?" />
+            <CheckBox IsChecked="True" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="5">
+            <Label Text="Health Saving Account?" />
+            <CheckBox IsChecked="True" />
+        </HorizontalStackLayout>
+    </FlexLayout>
+            
+    <HorizontalStackLayout Grid.Row="9"
                             Grid.Column="1"
                             Spacing="5">
-        
         <Button Text="Save" />
-        <Button Text="Cancel" />
-        
+        <Button Text="Cancel" />            
     </HorizontalStackLayout>
 
 </Grid>
