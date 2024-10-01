@@ -4,7 +4,7 @@
              x:Class="AdventureWorks.MainPage"
              Title="Home">
 
-    <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto"
+    <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto"
           ColumnDefinitions="Auto, *" Padding="7"
           ColumnSpacing="10"
           RowSpacing="10">
@@ -41,6 +41,15 @@
                VerticalOptions="End" HorizontalOptions="End" />
         <Entry Grid.Row="6" Grid.Column="1" Text="" />
 
+        <HorizontalStackLayout Grid.Row="7"
+                               Grid.Column="1"
+                               Spacing="5">
+            
+            <Button Text="Save" />
+            <Button Text="Cancel" />
+            
+        </HorizontalStackLayout>
+        
     </Grid>
 
 </ContentPage>
