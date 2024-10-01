@@ -6,6 +6,16 @@
 <Grid RowDefinitions="Auto, ..." ...>
     
     ...
+    
+    <Label Grid.Row="3" Text="Login Id" 
+            VerticalOptions="Center" HorizontalOptions="End" />
+    <VerticalStackLayout Grid.Row="3" Grid.Column="1">
+        <Entry Text="" />
+        <Label FontSize="Micro" 
+                Text="Please use a combination of letters and numbers." />
+    </VerticalStackLayout>
+
+    ...
 
     <HorizontalStackLayout Grid.Row="7"
                             Grid.Column="1"

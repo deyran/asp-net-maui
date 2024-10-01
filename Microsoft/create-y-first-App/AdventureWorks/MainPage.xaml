@@ -25,9 +25,15 @@
                  Color="Black" />
        
         
+        
         <Label Grid.Row="3" Text="Login Id" 
-               VerticalOptions="End" HorizontalOptions="End" />
-        <Entry Grid.Row="3" Grid.Column="1" Text="" />
+               VerticalOptions="Center" HorizontalOptions="End" />
+        <VerticalStackLayout Grid.Row="3" Grid.Column="1">
+            <Entry Text="" />
+            <Label FontSize="Micro" 
+                   Text="Please use a combination of letters and numbers." />
+        </VerticalStackLayout>
+
 
         <Label Grid.Row="4" Text="First Name" 
                VerticalOptions="End" HorizontalOptions="End" />
