@@ -19,25 +19,29 @@
     ...
 
     <Label Grid.Row="7"
-            Text="Is Enrolled?" />
+            Text="Is Enrolled?"
+            VerticalOptions="Center" />
     <FlexLayout Grid.Row="7"
                 Grid.Column="1"
-                Wrap="Wrap"
-                Direction="Column">
+                Wrap="Wrap">
         <HorizontalStackLayout Spacing="5">
-            <Label Text="401k?" />
+            <Label Text="401k?" 
+                    VerticalOptions="Center" />
             <CheckBox IsChecked="True" />
         </HorizontalStackLayout>
         <HorizontalStackLayout Spacing="5">
-            <Label Text="Flex Time?" />
+            <Label Text="Flex Time?" 
+                    VerticalOptions="Center" />
             <CheckBox />
         </HorizontalStackLayout>
         <HorizontalStackLayout Spacing="5">
-            <Label Text="Health Care?" />
+            <Label Text="Health Care?" 
+                    VerticalOptions="Center" />
             <CheckBox IsChecked="True" />
         </HorizontalStackLayout>
         <HorizontalStackLayout Spacing="5">
-            <Label Text="Health Saving Account?" />
+            <Label Text="Health Saving Account?" 
+                    VerticalOptions="Center" />
             <CheckBox IsChecked="True" />
         </HorizontalStackLayout>
     </FlexLayout>
