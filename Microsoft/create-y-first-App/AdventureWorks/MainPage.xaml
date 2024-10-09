@@ -4,6 +4,15 @@
              x:Class="AdventureWorks.MainPage"
              Title="Home">
 
+    <ContentPage.Resources>
+        <Style TargetType="Grid">
+            <Setter Property="ColumnSpacing"    Value="10" />
+            <Setter Property="RowSpacing"       Value="10" />
+            <Setter Property="Margin"           Value="10" />
+            <Setter Property="Padding"          Value="10" />
+        </Style>
+    </ContentPage.Resources>
+    
     <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
           ColumnDefinitions="Auto, *" Padding="7"
           ColumnSpacing="10"
