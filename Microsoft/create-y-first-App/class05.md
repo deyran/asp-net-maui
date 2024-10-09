@@ -16,6 +16,16 @@
             <Setter Property="Margin"           Value="10" />
             <Setter Property="Padding"          Value="10" />
         </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="VerticalTextAlignment"
+                    Value="Center" />
+        </Style>
+
+        <Style TargetType="HorizontalStackLayout">
+            <Setter Property="Spacing"
+                    Value="5" />
+        </Style>
     </ContentPage.Resources>
     
     <Grid ...>
