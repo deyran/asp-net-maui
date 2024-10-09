@@ -36,3 +36,7 @@
 ```
 
 *The <ContentPage.Resources> element is used to define resources that can be reused within the content page. In this example, it contains a Style for Grid elements, setting properties like ColumnSpacing, RowSpacing, Margin, and Padding. This helps maintain consistency and avoid repetitive code by centralizing style definitions.*
+
+
+*Continue ...*
+https://youtu.be/rHflpkCZeF8?t=311
