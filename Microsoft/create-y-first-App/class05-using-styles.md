@@ -1,6 +1,6 @@
 # [Use Styles to Improve the UI (5 of 18) | Building Apps with XAML and .NET MAUI](https://youtu.be/rHflpkCZeF8?si=RKVjBd9Sxe2MH54j)
 
-## <ContentPage.Resources>
+## Adding styles in a single page
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -37,6 +37,4 @@
 
 *The <ContentPage.Resources> element is used to define resources that can be reused within the content page. In this example, it contains a Style for Grid elements, setting properties like ColumnSpacing, RowSpacing, Margin, and Padding. This helps maintain consistency and avoid repetitive code by centralizing style definitions.*
 
-
-*Continue ...*
-https://youtu.be/rHflpkCZeF8?t=311
+## [Adding styles to the entire application](https://youtu.be/rHflpkCZeF8?t=311)
