@@ -11,7 +11,7 @@
             </ResourceDictionary.MergedDictionaries>
 
             <!--STYLE CONTENT-->
-            <Style TargetType="Grid">
+            <Style TargetType="Grid" x:Key="Grid.Page">
                 <Setter Property="ColumnSpacing"    Value="10" />
                 <Setter Property="RowSpacing"       Value="10" />
                 <Setter Property="Margin"           Value="10" />
