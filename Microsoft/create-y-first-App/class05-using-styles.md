@@ -80,3 +80,6 @@ Open *App.xaml* file, cut the content of *<ContentPage.Resources>* element and p
     </Application.Resources>
 </Application>
 ```
+
+* *Now, any page got this resource*
+* To override the global style for a specific element on a specific page, the only thing to do is write the style inside the *<ContentPage.Resources>* of the page.
