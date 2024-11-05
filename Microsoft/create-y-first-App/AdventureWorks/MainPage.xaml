@@ -5,29 +5,6 @@
              Title="Home">
 
     <ContentPage.Resources>
-        <Style TargetType="Grid">
-            <Setter Property="ColumnSpacing"    Value="10" />
-            <Setter Property="RowSpacing"       Value="10" />
-            <Setter Property="Margin"           Value="10" />
-            <Setter Property="Padding"          Value="10" />
-        </Style>
-
-        <Style TargetType="Label">
-            <Setter Property="VerticalTextAlignment"    Value="Center" />
-            <Setter Property="VerticalOptions"          Value="Center" />
-            <Setter Property="HorizontalOptions"        Value="End" />
-        </Style>
-
-        <Style TargetType="HorizontalStackLayout">
-            <Setter Property="Spacing" Value="5" />
-        </Style>
-
-        <Style TargetType="Button">
-            <Setter Property="WidthRequest"     Value="70" />
-            <Setter Property="HeightRequest"    Value="40" />
-            <Setter Property="BackgroundColor"  Value="Blue"/>
-            <Setter Property="TextColor"        Value="White" />
-        </Style>
     </ContentPage.Resources>
     
     <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
