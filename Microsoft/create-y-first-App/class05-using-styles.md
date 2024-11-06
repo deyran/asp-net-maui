@@ -81,6 +81,48 @@ Open *App.xaml* file, cut the content of *<ContentPage.Resources>* element and p
 </Application>
 ```
 
-1. *Now, any page got this resource*
+1. *<ResourceDictionary> - Is a repository for resources that are used by a .Net Maui. These resources are: styles, control templates, data templates, converters and colors*
+   
 2. *To override the global style for a specific element on a specific page, the only thing to do is write the style inside the <ContentPage.Resources> of the page.*
-3. This procedure affects all elements on the page.
+   
+3. *This procedure affects all elements on the page.*
+
+## [x:Key="..." and StaticResource](https://youtu.be/rHflpkCZeF8?t=485)
+
+1. In App.xaml
+
+```
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application ...>
+    <Application.Resources>
+        <ResourceDictionary>
+            
+            ...
+
+            <!--STYLE CONTENT => x:Key="..."-->
+            <Style TargetType="Grid" x:Key="Grid.Page">
+                <Setter Property="ColumnSpacing"    Value="10" />
+                
+                ...
+
+            </Style>
+
+            ...
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
+```
+
+2. In MainPage.xaml
+
+```
+...
+
+<Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+        ColumnDefinitions="Auto, *"
+        Style="{StaticResource Grid.Page}">
+</Grid>
+...
+
+```
