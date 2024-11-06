@@ -126,3 +126,5 @@ Open *App.xaml* file, cut the content of *<ContentPage.Resources>* element and p
 ...
 
 ```
+
+# [Creating Resources](https://youtu.be/rHflpkCZeF8?t=730)
