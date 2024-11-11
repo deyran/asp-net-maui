@@ -127,4 +127,26 @@ Open *App.xaml* file, cut the content of *<ContentPage.Resources>* element and p
 
 ```
 
-# [Creating Resources](https://youtu.be/rHflpkCZeF8?t=730)
+# [Adding resource dictionary](https://youtu.be/rHflpkCZeF8?t=730)
+
+1. In the folder *Resources/Style, add, new Item*
+2. Name the file as *AppStyles.xaml*
+3. In the App.xaml file add the *AppStyles.xaml* reference as shown in the code below:
+
+```
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application ...>
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+
+                <ResourceDictionary Source="Resources/Styles/appStyles.xaml" />
+
+            </ResourceDictionary.MergedDictionaries>
+    </Application.Resources>
+</Application>
+```
+
+4. AAAAAA
