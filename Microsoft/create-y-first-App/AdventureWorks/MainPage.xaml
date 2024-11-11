@@ -2,10 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AdventureWorks.MainPage"
-             Title="Home">
-
-    <ContentPage.Resources>
-    </ContentPage.Resources>
+             Title="{StaticResource ApplicationTitle}">
     
     <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
           ColumnDefinitions="Auto, *"

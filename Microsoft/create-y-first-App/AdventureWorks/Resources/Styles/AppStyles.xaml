@@ -3,6 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AdventureWorks.Resources.Styles.AppStyles">
 
+    <x:String x:Key="ApplicationTitle">
+        Adventure Works - Rannyere Costa
+    </x:String>
+
     <!--STYLE CONTENT-->
     <Style TargetType="Grid" x:Key="Grid.Page">
         <Setter Property="ColumnSpacing"    Value="10" />

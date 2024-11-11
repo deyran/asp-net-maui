@@ -149,4 +149,25 @@ Open *App.xaml* file, cut the content of *<ContentPage.Resources>* element and p
 </Application>
 ```
 
-4. AAAAAA
+# [Using reusable string in resource dictionary](https://youtu.be/rHflpkCZeF8?t=833)
+
+1. In the *AppStyles.xaml* add the code below:
+   
+```
+<x:String x:Key="ApplicationTitle">
+Adventure Works - Rannyere Costa
+</x:String>
+
+```
+
+2. In the *MainPage.xmal* file, edit it as shown in the code below:
+
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdventureWorks.MainPage"
+             Title="{StaticResource ApplicationTitle}">
+...             
+</ContentPage>             
+```
