@@ -149,7 +149,7 @@ Open *App.xaml* file, cut the content of *<ContentPage.Resources>* element and p
 </Application>
 ```
 
-# [Using reusable string in resource dictionary](https://youtu.be/rHflpkCZeF8?t=833)
+# [Using reusable values in resource dictionary](https://youtu.be/rHflpkCZeF8?t=833)
 
 1. In the *AppStyles.xaml* add the code below:
    
