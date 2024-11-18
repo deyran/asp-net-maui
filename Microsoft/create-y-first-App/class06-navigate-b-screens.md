@@ -5,3 +5,4 @@
 ## [Add few more pages](https://youtu.be/1FI3fAe1bBA?t=532)
 ## [Add more shell contents](https://youtu.be/1FI3fAe1bBA?t=572)
 ## [Drop-down menus](https://youtu.be/1FI3fAe1bBA?t=647)
+## [Navigate using click event](https://youtu.be/1FI3fAe1bBA?t=781)
