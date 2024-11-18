@@ -26,8 +26,6 @@
         HorizontalOptions="Center" />
 ```
 
-6. AAAAAA
-
 ## [AppShell.xaml | TabBar](https://youtu.be/1FI3fAe1bBA?t=242)
 ## [Add few more pages](https://youtu.be/1FI3fAe1bBA?t=532)
 ## [Add more shell contents](https://youtu.be/1FI3fAe1bBA?t=572)
