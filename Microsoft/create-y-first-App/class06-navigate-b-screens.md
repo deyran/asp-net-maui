@@ -16,7 +16,17 @@
 </ContentPage>
 ```
 
-4. Open the *MainPage.xaml*, cut the Grid content and paste into the *UserDetailView.xaml* page.
+4. Open the *MainPage.xaml* page, cut the Grid content and paste into the *UserDetailView.xaml* page.
+5. In the *MainPage.xaml* page, type the following code:
+
+```
+<Label  Text="{StaticResource ApplicationTitle}"
+        FontSize="Large"
+        VerticalOptions="Center"
+        HorizontalOptions="Center" />
+```
+
+6. AAAAAA
 
 ## [AppShell.xaml | TabBar](https://youtu.be/1FI3fAe1bBA?t=242)
 ## [Add few more pages](https://youtu.be/1FI3fAe1bBA?t=532)
