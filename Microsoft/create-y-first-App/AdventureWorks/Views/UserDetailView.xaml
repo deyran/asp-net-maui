@@ -3,10 +3,79 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AdventureWorks.Views.UserDetailView"
              Title="User Information">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+          ColumnDefinitions="Auto, *"
+          Style="{StaticResource Grid.Page}">
+
+        <Label Grid.Row="0"
+               Grid.ColumnSpan="2"
+               Text="User Information"
+               HorizontalOptions="Start"
+               FontSize="Title" />
+        <Label Grid.Row="1"
+               Grid.ColumnSpan="2"
+               HorizontalOptions="Start"
+               Text="Use this screen to modify user information"
+               FontSize="Body" />
+
+        <BoxView Grid.Row="2"
+                 Grid.ColumnSpan="2"
+                 Margin="0, 0, 0, 10"
+                 HeightRequest="1"
+                 Color="Black" />
+
+
+
+        <Label Grid.Row="3" Text="Login Id" />
+        <VerticalStackLayout Grid.Row="3" Grid.Column="1">
+            <Entry Text="" 
+                   Placeholder="Please use a combination of letters and numbers." />
+            <Label FontSize="Micro" 
+                   Text="Please use a combination of letters and numbers."
+                   HorizontalOptions="Start" />
+        </VerticalStackLayout>
+
+
+        <Label Grid.Row="4" Text="First Name" />
+        <Entry Grid.Row="4" Grid.Column="1" Text="" />
+
+        <Label Grid.Row="5" Text="Last Name" />
+        <Entry Grid.Row="5" Grid.Column="1" Text="" />
+
+        <Label Grid.Row="6" Text="Email address" />
+        <Entry Grid.Row="6" Grid.Column="1" Text="" />
+
+        <Label Grid.Row="7" Text="Is Enrolled?" />
+        <FlexLayout Grid.Row="7"
+                    Grid.Column="1"
+                    Wrap="Wrap">
+            <HorizontalStackLayout>
+                <Label Text="401k?" VerticalOptions="Center" />
+                <CheckBox IsChecked="True" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label Text="Flex Time?" VerticalOptions="Center" />
+                <CheckBox />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label Text="Health Care?" VerticalOptions="Center" />
+                <CheckBox IsChecked="True" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label Text="Health Saving Account?" VerticalOptions="Center" />
+                <CheckBox IsChecked="True" />
+            </HorizontalStackLayout>
+        </FlexLayout>
+
+        <HorizontalStackLayout Grid.Row="9" Grid.Column="1">
+            <Button Text="Save" />
+            <Button Text="Cancel" />
+        </HorizontalStackLayout>
+
+    </Grid>
+
 </ContentPage>

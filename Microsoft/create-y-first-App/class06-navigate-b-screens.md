@@ -4,7 +4,7 @@
 
 1. In the root directory, add new folder called **Views**
 2. Inside the Views folder, add new item (.NET MAUI Content pages) called *UserDetailView.xaml*
-3. Open the *UserDetailView.xaml*, edit it as shown in the code below:
+3. Open the *UserDetailView.xaml* page, edit it as shown in the code below:
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -16,7 +16,7 @@
 </ContentPage>
 ```
 
-4. AAAAA
+4. Open the *MainPage.xaml*, cut the Grid content and paste into the *UserDetailView.xaml* page.
 
 ## [AppShell.xaml | TabBar](https://youtu.be/1FI3fAe1bBA?t=242)
 ## [Add few more pages](https://youtu.be/1FI3fAe1bBA?t=532)
