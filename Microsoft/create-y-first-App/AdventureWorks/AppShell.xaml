@@ -20,5 +20,33 @@
             Title="User"
             ContentTemplate="{DataTemplate views:UserDetailView}"
             Route="UserDetailView" />
+
+        <ShellContent
+            Title="Products"
+            ContentTemplate="{DataTemplate views:ProductDetailView}"
+            Route="ProductDetailView" />
+
+        <ShellContent
+            Title="Customers"
+            ContentTemplate="{DataTemplate views:CustomerDetailView}"
+            Route="CustomerDetailView" />
+
+        <Tab Title="Maintenance">
+            <ShellContent
+                Title="Colors"
+                ContentTemplate="{DataTemplate views:ColorListView}"
+                Route="ColorListView" />
+
+            <ShellContent
+                Title="Phones types"
+                ContentTemplate="{DataTemplate views:PhoneTypesListView}"
+                Route="PhoneTypesListView" />
+        </Tab>
+
+        <ShellContent
+            Title="Login"
+            ContentTemplate="{DataTemplate views:LoginView}"
+            Route="LoginView" />
+
     </TabBar>
 </Shell>

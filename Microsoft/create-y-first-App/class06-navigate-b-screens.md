@@ -67,5 +67,29 @@
 ## [Add few more pages](https://youtu.be/1FI3fAe1bBA?t=532)
 
 ## [Add more shell contents](https://youtu.be/1FI3fAe1bBA?t=572)
+
 ## [Drop-down menus](https://youtu.be/1FI3fAe1bBA?t=647)
+
+```
+...
+
+<Tab Title="Maintenance">
+        <ShellContent
+        Title="Colors"
+        ContentTemplate="{DataTemplate views:ColorListView}"
+        Route="ColorListView" />
+
+        <ShellContent
+        Title="Phones types"
+        ContentTemplate="{DataTemplate views:PhoneTypesListView}"
+        Route="PhoneTypesListView" />
+</Tab>
+
+<ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate views:LoginView}"
+        Route="LoginView" />
+...
+```
+
 ## [Navigate using click event and register Route](https://youtu.be/1FI3fAe1bBA?t=781)
