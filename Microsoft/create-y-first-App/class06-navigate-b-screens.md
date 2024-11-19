@@ -26,7 +26,44 @@
         HorizontalOptions="Center" />
 ```
 
-## [AppShell.xaml | TabBar](https://youtu.be/1FI3fAe1bBA?t=242)
+## [Navigating between pages | Using TabBar](https://youtu.be/1FI3fAe1bBA?t=242)
+
+1. Open AppShell.xaml file and create XML namespace as shown in the code below:
+
+```
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    ...
+    xmlns:views="clr-namespace:AdventureWorks.Views"
+    ...>
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+</Shell>
+```
+
+2. Add TabBar, this element allows you have more than one ShellContent:
+
+```
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell ...>
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+
+        <ShellContent
+            Title="User"
+            ContentTemplate="{DataTemplate views:UserDetailView}"
+            Route="UserDetailView" />
+    </TabBar>
+</Shell>
+```
+
 ## [Add few more pages](https://youtu.be/1FI3fAe1bBA?t=532)
 ## [Add more shell contents](https://youtu.be/1FI3fAe1bBA?t=572)
 ## [Drop-down menus](https://youtu.be/1FI3fAe1bBA?t=647)
