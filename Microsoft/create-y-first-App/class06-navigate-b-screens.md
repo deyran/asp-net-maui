@@ -93,3 +93,27 @@
 ```
 
 ## [Navigate using click event and register Route](https://youtu.be/1FI3fAe1bBA?t=781)
+
+1. Create another view page called UserListView.xaml in the View folder. Edit the UserListView.xaml as shown in the code below:
+
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdventureWorks.Views.UserListView"
+             Title="User List">
+
+    <VerticalStackLayout VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                         Spacing="10">
+        <Label Text="User List"
+               FontSize="Header"
+               HorizontalOptions="Center" />
+        <Button Text="Navigate to detail"
+                Clicked="NavigateToDetail_Clicked" />
+    </VerticalStackLayout>
+    
+</ContentPage>
+```
+
+2. AAAAAAAA
