@@ -7,8 +7,8 @@ public partial class UserListView : ContentPage
 		InitializeComponent();
 	}
 
-    private void NavigateToDetail_Clicked(System.Object sender, System.EventArgs e)
+    private async void NavigateToDetail_Clicked(System.Object sender, System.EventArgs e)
     {
-
+		await Shell.Current.GoToAsync(nameof(Views.UserDetailView));
     }
 }

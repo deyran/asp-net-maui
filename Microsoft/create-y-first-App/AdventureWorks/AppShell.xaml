@@ -18,8 +18,8 @@
 
         <ShellContent
             Title="User"
-            ContentTemplate="{DataTemplate views:UserDetailView}"
-            Route="UserDetailView" />
+            ContentTemplate="{DataTemplate views:UserListView}"
+            Route="UserListView" />
 
         <ShellContent
             Title="Products"

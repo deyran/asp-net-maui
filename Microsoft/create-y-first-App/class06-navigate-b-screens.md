@@ -116,4 +116,36 @@
 </ContentPage>
 ```
 
-2. AAAAAAAA
+2. Open the UserListView.xaml.cs file, edit the NavigateToDetail_Clicked method as shown in the code below:
+
+```
+private async void NavigateToDetail_Clicked(System.Object sender, System.EventArgs e)
+{
+    await Shell.Current.GoToAsync(nameof(Views.UserDetailView));
+}
+```
+
+3. Now open the AppShell.xaml file in the User ShellContent edit it as shown in the code below:
+
+```
+<ShellContent
+    Title="User"
+    ContentTemplate="{DataTemplate views:UserListView}"
+    Route="UserListView" />
+```
+
+4. Open the AppShell.xaml and register the route as shown in the code below:
+
+```
+namespace AdventureWorks
+{
+    public partial class AppShell : Shell
+    {
+        public AppShell()
+        {
+            InitializeComponent();
+            Routing.RegisterRoute(nameof(Views.UserDetailView), typeof(Views.UserDetailView));
+        }
+    }
+}
+```

@@ -25,11 +25,4 @@
         <Setter Property="Spacing" Value="5" />
     </Style>
 
-    <Style TargetType="Button">
-        <Setter Property="WidthRequest"     Value="70" />
-        <Setter Property="HeightRequest"    Value="40" />
-        <Setter Property="BackgroundColor"  Value="Blue"/>
-        <Setter Property="TextColor"        Value="White" />
-    </Style>
-
 </ResourceDictionary>
