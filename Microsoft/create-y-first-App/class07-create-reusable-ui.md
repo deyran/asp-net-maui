@@ -21,4 +21,9 @@
 </Grid>
 ```
 
-3. AAAAAAA
+3. Binding content, open the *HeaderView.xaml.cs* file and edit it as shown in the code below:
+
+```
+```
+
+4. AAAAAA
