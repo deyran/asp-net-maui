@@ -24,6 +24,7 @@
 3. Binding content, open the *HeaderView.xaml.cs* file and edit it as shown in the code below:
 
 ```
+https://youtu.be/_z8cbTLVOm0?t=269
 ```
 
 4. AAAAAA
