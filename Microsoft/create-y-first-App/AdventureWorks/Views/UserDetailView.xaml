@@ -26,7 +26,6 @@
                  Color="Black" />
 
 
-
         <Label Grid.Row="3" Text="Login Id" />
         <VerticalStackLayout Grid.Row="3" Grid.Column="1">
             <Entry Text="" 

@@ -6,7 +6,7 @@ public partial class HeaderView : ContentView
     {
         InitializeComponent();
 
-        ViewTitle = "ViewTitle";
+        ViewTitle = "View Title";
         ViewDescription = "View Description";
 
         this.BindingContext = this;

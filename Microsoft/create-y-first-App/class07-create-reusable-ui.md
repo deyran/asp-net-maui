@@ -58,4 +58,26 @@ public partial class HeaderView : ContentView
 }
 ```
 
-4. AAAAAA
+4. Open the *LoginView.xaml* and edit it as shown in the code below:
+
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdventureWorks.Views.LoginView"
+             xmlns:partial="clr-namespace:AdventureWorks.ViewsPartial"
+             Title="Login">
+
+    <StackLayout>
+        <partial:HeaderView ViewTitle="Login page" 
+                        ViewDescription="Please identify yourself" />
+
+        <Label 
+            Text="Login - Rannyere Costa"
+            FontSize="Large"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </StackLayout>
+
+</ContentPage>
+```
