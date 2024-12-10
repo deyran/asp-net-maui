@@ -8,11 +8,9 @@
     <StackLayout>
         <partial:HeaderView ViewTitle="Login page" 
                         ViewDescription="Please identify yourself" />
-        <Frame WidthRequest="250">
-            <Grid RowDefinitions="Auto, Auto">
-                <Label Text="Still Employed?" />
-                <Switch Grid.Column="1"  />
-            </Grid>
+
+        <Frame Padding="10">
+            <Switch />
         </Frame>
 
     </StackLayout>
