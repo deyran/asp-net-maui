@@ -9,7 +9,7 @@
         <partial:HeaderView ViewTitle="Login page" 
                         ViewDescription="Please identify yourself" />
 
-        <Frame Padding="10">
+        <Frame Padding="10" WidthRequest="100">
             <Switch />
         </Frame>
 
