@@ -8,12 +8,13 @@
     <StackLayout>
         <partial:HeaderView ViewTitle="Login page" 
                         ViewDescription="Please identify yourself" />
+        <Frame WidthRequest="250">
+            <Grid RowDefinitions="Auto, Auto">
+                <Label Text="Still Employed?" />
+                <Switch Grid.Column="1"  />
+            </Grid>
+        </Frame>
 
-        <Label 
-            Text="Login - Rannyere Costa"
-            FontSize="Large"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
     </StackLayout>
 
 </ContentPage>
