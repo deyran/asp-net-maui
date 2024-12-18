@@ -5,13 +5,15 @@
 1. Open the *LoginView.xaml*, insert the following code:
 
 ```
-<Frame WidthRequest="250">
-    <Grid RowDefinitions="Auto, Auto">
-        <Label Text="Still Employed?" />
-        <Switch Grid.Column="1"  />
-    </Grid>
-</Frame>
+<StackLayout>
+    <partial:HeaderView ViewTitle="Login page" 
+                    ViewDescription="Please identify yourself" />
 
+    <Frame Padding="10" WidthRequest="100">
+        <Switch />
+    </Frame>
+
+</StackLayout>
 ```
 
 2. AAAAAA
