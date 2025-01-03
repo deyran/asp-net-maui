@@ -10,7 +10,7 @@
                         ViewDescription="Please identify yourself" />
 
         <Frame Padding="10" WidthRequest="100">
-            <Switch />
+            <Switch IsToggled="True" OnColor="Orange" ThumbColor="Green" />
         </Frame>
 
     </StackLayout>
