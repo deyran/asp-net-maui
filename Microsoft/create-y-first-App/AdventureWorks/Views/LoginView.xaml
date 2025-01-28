@@ -36,6 +36,13 @@
             </HorizontalStackLayout>
         </Frame>
 
+        <Frame Padding="10" Margin="20">
+            <HorizontalStackLayout>
+                <Label Text="TimePicker" />
+                <TimePicker Time="06:00:00" />
+            </HorizontalStackLayout>
+        </Frame>
+
     </StackLayout>
 
 </ContentPage>
