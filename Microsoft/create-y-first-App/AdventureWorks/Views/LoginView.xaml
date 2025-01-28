@@ -9,8 +9,24 @@
         <partial:HeaderView ViewTitle="Login page" 
                         ViewDescription="Please identify yourself" />
 
-        <Frame Padding="10" WidthRequest="100">
-            <Switch IsToggled="True" OnColor="Orange" ThumbColor="Green" />
+        <Frame Padding="10" Margin="20">
+            <Switch IsToggled="True" />
+        </Frame>
+
+        <Frame Padding="10" Margin="20">
+            <HorizontalStackLayout>
+                <Label Text = "0" />
+                <RadioButton GroupName="Numbers" IsChecked="True" />
+
+                <Label Text = "1" />
+                <RadioButton GroupName="Numbers" IsChecked="True" />
+                
+                <Label Text = "2" />
+                <RadioButton GroupName="Numbers" IsChecked="True" />
+
+                <Label Text = "3" />
+                <RadioButton GroupName="Numbers" IsChecked="True" />
+            </HorizontalStackLayout>
         </Frame>
 
     </StackLayout>

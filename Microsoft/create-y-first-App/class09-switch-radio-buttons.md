@@ -11,7 +11,7 @@
                     ViewDescription="Please identify yourself" />
 
     <Frame Padding="10" WidthRequest="100">
-        <Switch Is />
+        <Switch IsToggled="True" />
     </Frame>
 
 </StackLayout>
@@ -70,4 +70,22 @@ namespace AdventureWorks
 }
 ```
 
-3. AAAAA
+## Using Radio buttons
+
+```
+<Frame Padding="10" Margin="20">
+    <HorizontalStackLayout>
+        <Label Text = "0" />
+        <RadioButton GroupName="Numbers" IsChecked="True" />
+
+        <Label Text = "1" />
+        <RadioButton GroupName="Numbers" IsChecked="True" />
+        
+        <Label Text = "2" />
+        <RadioButton GroupName="Numbers" IsChecked="True" />
+
+        <Label Text = "3" />
+        <RadioButton GroupName="Numbers" IsChecked="True" />
+    </HorizontalStackLayout>
+</Frame>
+```
