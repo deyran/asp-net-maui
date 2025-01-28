@@ -29,6 +29,13 @@
             </HorizontalStackLayout>
         </Frame>
 
+        <Frame Padding="10" Margin="20">
+            <HorizontalStackLayout>
+                <Label Text="DatePicker" />
+                <DatePicker HorizontalOptions="Start" />
+            </HorizontalStackLayout>
+        </Frame>
+
     </StackLayout>
 
 </ContentPage>
