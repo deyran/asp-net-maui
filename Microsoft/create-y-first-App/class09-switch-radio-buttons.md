@@ -58,8 +58,8 @@ namespace AdventureWorks
         .AppendToMapping("Custom", (h, v) =>
             {
                 // Get rid of On/Off label beside switch, to match other platforms
-                h.PlatformView.OffContent = string.Empty; //"No";
-                h.PlatformView.OnContent = string.Empty; //"Yes";
+                h.PlatformView.OffContent = "No"; //string.Empty;
+                h.PlatformView.OnContent = "Yes"; //string.Empty; 
 
                 h.PlatformView.MinWidth = 0;
             });
